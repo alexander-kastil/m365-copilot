@@ -14,7 +14,7 @@ Implementing Plugins for Microsoft 365 Copilot: This module covers Microsoft 365
 
 Teams Apps & Copilot Plugins Deployment: This module covers app deployment options, Microsoft 365 CLI & Microsoft 365 Desired State Configuration, publishing Microsoft Teams apps, introduction to Azure Container Apps, deploying containers using Azure DevOps, and publishing API-based message extensions to Azure Container Apps.
 
-Create custom copilots with Azure AI Studio: This module is an introduction to Azure AI Studio, Microsoft Copilot Studio Plugin Architecture, prompt flows & embeddings, introduction to Retrieval Augmented Generation (RAG), and RAG-based Copilots. 
+Create copilots with Azure AI Studio: This module is an introduction to Azure AI Studio & the Microsoft Copilot ecosystem, prompt flows & embeddings, introduction to Retrieval Augmented Generation (RAG), and RAG-based Copilots. Azure AI Studio brings together various AI services within the Azure cloud platform, providing a unified experience for AI development
 
 Duration: 4 days
 
@@ -80,11 +80,11 @@ Skills can be acquired through the following resources:
 - Azure Container Apps Essentials
 - Publish Api based Message Extensions to Azure Container Apps
 
-### Create custom copilots with Azure AI Studio
+### Create Copilots with Azure AI Studio
 
 - Introduction & using Azure AI Studio
 - Common AI Models
-- Microsoft Copilot Studio Plugin Architecture
+- Microsoft Copilot Plugin Architecture
 - Prompt Flows & Embeddings
 - Introduction to Retrieval Augmented Generation (RAG)
 - RAG based Copilots
