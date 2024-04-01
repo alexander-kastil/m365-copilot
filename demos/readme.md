@@ -12,9 +12,9 @@ Using Microsoft 365 Copilot Office Apps & Teams: This module provides an overvie
 
 Implementing Plugins for Microsoft 365 Copilot: This module covers Microsoft 365 Copilot plugins, plugin architecture, message extensions for Microsoft Copilot for Microsoft 365, building plugins using Microsoft Business Applications, Graph Connectors API & Microsoft 365 Copilot, and implementing a Microsoft Graph Connectors for Microsoft 365 Copilot.
 
-Publishing Teams Apps & Copilot Plugins: This module covers app deployment options, Microsoft 365 CLI & Microsoft 365 Desired State Configuration, publishing Microsoft Teams apps, introduction to Azure Container Apps, deploying containers using Azure DevOps, and publishing API-based message extensions to Azure Container Apps.
+Teams Apps & Copilot Plugins Deployment: This module covers app deployment options, Microsoft 365 CLI & Microsoft 365 Desired State Configuration, publishing Microsoft Teams apps, introduction to Azure Container Apps, deploying containers using Azure DevOps, and publishing API-based message extensions to Azure Container Apps.
 
-Create custom copilots with Azure AI Studio: This module is an introduction to Azure AI Studio, Microsoft Copilot Studio Plugin Architecture, prompt flows, introduction to Retrieval Augmented Generation (RAG), and RAG-based Copilots. 
+Create custom copilots with Azure AI Studio: This module is an introduction to Azure AI Studio, Microsoft Copilot Studio Plugin Architecture, prompt flows & embeddings, introduction to Retrieval Augmented Generation (RAG), and RAG-based Copilots. 
 
 Duration: 4 days - depending on the audience, the depth of the content covered and the amount of labs and exercises completed.
 
@@ -72,7 +72,7 @@ Skills can be acquired through the following resources:
 - Graph Connectors API & Microsoft 365 Copilot
 - Implement a Microsoft Graph Connectors for Microsoft 365 Copilot
 
-### Publishing Teams Apps & Copilot Plugins
+### Teams Apps & Copilot Plugins Deployment
 
 - Overview of App Deployment Options
 - Microsoft 365 CLI & Microsoft 365 Desired State Configuration
@@ -83,9 +83,9 @@ Skills can be acquired through the following resources:
 
 ### Create custom copilots with Azure AI Studio
 
-- Overview Azure AI Studio
-- Using Azure AI Studio
+- Introduction & using Azure AI Studio
+- Common AI Models
 - Microsoft Copilot Studio Plugin Architecture
-- Prompt Flows
+- Prompt Flows & Embeddings
 - Introduction to Retrieval Augmented Generation (RAG)
 - RAG based Copilots
