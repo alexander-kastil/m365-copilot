@@ -76,9 +76,7 @@ Skills can be acquired through the following resources:
 
 - Overview of App Deployment Options
 - Microsoft 365 CLI & Microsoft 365 Desired State Configuration
-- Publish Microsoft Teams Apps
-- Introduction to Azure Container Apps
-- Deploying Containers using Azure DevOps
+- Azure Container Apps Essentials
 - Publish Api based Message Extensions to Azure Container Apps
 
 ### Create custom copilots with Azure AI Studio
