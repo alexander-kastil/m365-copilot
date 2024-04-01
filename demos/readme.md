@@ -4,11 +4,11 @@ The course is divided into six modules, each covering a different aspect of Micr
 
 Introduction: This module provides an overview of the Microsoft 365 platform, including apps, extensions, and Copilot. It also covers development tools and environment setup, Microsoft Entra ID, and app registrations.
 
-Develop Application for Microsoft Graph: This module covers the basics of Microsoft Graph, including optimizing data usage with query parameters, using common graph endpoints (files, mail, calendar, contacts, SharePoint, planner), accessing Teams data with Microsoft Graph, using change notifications and tracking changes with Microsoft Graph, and implementing a custom Graph Connector.
+Microsoft Graph & Data Access Essentals: This module covers the basics of Microsoft Graph, including optimizing data usage with query parameters, using common graph endpoints (files, mail, calendar, contacts, SharePoint, planner), accessing Teams data with Microsoft Graph, using change notifications and tracking changes with Microsoft Graph, and implementing a custom Graph Connector. It also covers Azure Function Python Essentials to allow integration of any existing Python based data access.
 
-Extend Microsoft Teams: This module covers building apps for Microsoft Teams, including an overview of the Teams Developer Portal, introduction to Teams Developer Toolkit, tabs in Microsoft Teams, collecting input with task modules, task-oriented interactions with messaging extensions, and building API-based message extensions.
+Microsoft Teams Extension Patterns: This module covers building apps for Microsoft Teams, including an overview of the Teams Developer Portal, introduction to Teams Developer Toolkit, tabs in Microsoft Teams, collecting input with task modules, task-oriented interactions with messaging extensions, and building API-based message extensions.
 
-Using Microsoft 365 Copilot Office Apps & Teams: This module provides an overview of Microsoft 365 Copilot, including Copilot prompts and using Copilot in Office Apps & Teams.
+Using Microsoft 365 Copilot Office in Apps & Teams: This module provides an overview of Microsoft 365 Copilot, including Copilot prompts and using Copilot in Office Apps & Teams.
 
 Implementing Plugins for Microsoft 365 Copilot: This module covers Microsoft 365 Copilot plugins, plugin architecture, message extensions for Microsoft Copilot for Microsoft 365, building plugins using Microsoft Business Applications, Graph Connectors API & Microsoft 365 Copilot, and implementing a Microsoft Graph Connectors for Microsoft 365 Copilot.
 
@@ -16,13 +16,13 @@ Teams Apps & Copilot Plugins Deployment: This module covers app deployment optio
 
 Create custom copilots with Azure AI Studio: This module is an introduction to Azure AI Studio, Microsoft Copilot Studio Plugin Architecture, prompt flows & embeddings, introduction to Retrieval Augmented Generation (RAG), and RAG-based Copilots. 
 
-Duration: 4 days - depending on the audience, the depth of the content covered and the amount of labs and exercises completed.
+Duration: 4 days
 
 ## Prerequisites & Requirements
 
 - Basic Microsoft 365 Platform Development Skills
-- .NET Developer Skills (required for some modules)
-- Node JS and basic React Developer Skills (required for some modules)
+- .NET Developer Skills (helpful for some modules)
+- Node JS and basic React Developer Skills (helpful for some modules)
 
 Skills can be acquired through the following resources:
 
@@ -38,7 +38,7 @@ Skills can be acquired through the following resources:
 - Introduction Microsoft Entra ID
 - App Registrations
 
-### Develop Application for Microsoft Graph
+### Microsoft Graph & Data Access Essentals
 
 - Overview of Microsoft Graph
 - Optimize Data Usage with Query Parameters
@@ -46,8 +46,9 @@ Skills can be acquired through the following resources:
 - Accessing Teams Data with Microsoft Graph
 - Use change notifications and track changes with Microsoft Graph
 - Implementing a custom Graph Connector
+- Azure Function Python Essentials
 
-### Extend Microsoft Teams
+### Microsoft Teams Extension Patterns
 
 - Overview of Building Apps for Microsoft Teams
 - Teams Developer Portal
@@ -57,10 +58,10 @@ Skills can be acquired through the following resources:
 - Task-oriented interactions with messaging extensions
 - Build API-based message extension
 
-### Using Microsoft 365 Copilot Office Apps & Teams
+### Using Microsoft 365 Copilot in Office Apps & Teams
 
 - Overview of Microsoft 365 Copilot 
-- Copilot Prompts
+- Writing effective Prompts
 - Using Copilot in Office Apps & Teams
 
 ### Implementing Plugins for Microsoft 365 Copilot
