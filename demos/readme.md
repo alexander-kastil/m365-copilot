@@ -67,7 +67,7 @@ Skills can be acquired through the following resources:
 ### Implementing Plugins for Microsoft 365 Copilot
 
 - Microsoft 365 Copilot Plugins
-- Plugin Architecture
+- Copilot Plugin Architecture
 - Message Extensions for Microsoft Copilot for Microsoft 365
 - Build Plugins using Microsoft Business Applications
 - Graph Connectors API & Microsoft 365 Copilot
