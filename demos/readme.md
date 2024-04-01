@@ -1,4 +1,4 @@
-# Developing Apps and Plugins for Microsoft 365 & Copilot
+# Building Apps and Plugins for Microsoft 365 Copilot
 
 The course is divided into six modules, each covering a different aspect of Microsoft 365 Copilot. 
 
