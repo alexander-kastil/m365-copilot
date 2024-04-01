@@ -28,7 +28,7 @@ Skills can be acquired through the following resources:
 
 [Microsoft 365 - Development Fundamentals](http://<URL_TO_CLASS>)
 
-## Detailed Module Descriptions
+## Modules
 
 ### Introduction
 
