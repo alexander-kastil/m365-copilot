@@ -41,18 +41,16 @@ Skills can be acquired through the following resources:
 ### Microsoft Graph & Data Access Essentals
 
 - Overview of Microsoft Graph
-- Optimize Data Usage with Query Parameters
 - Using Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
 - Accessing Teams Data with Microsoft Graph
-- Use change notifications and track changes with Microsoft Graph
+- Microsoft Graph Change Notifications
 - Implementing a custom Graph Connector
 - Azure Function Python Essentials
 
 ### Microsoft Teams Extension Patterns
 
-- Overview of Building Apps for Microsoft Teams
-- Teams Developer Portal
-- Introduction to Teams Developer Toolkit
+- Teams Extension Patterns & Developer Portal
+- Teams Developer Toolkit
 - Tabs in Microsoft Teams
 - Collect input with task modules
 - Task-oriented interactions with messaging extensions
