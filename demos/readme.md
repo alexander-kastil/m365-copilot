@@ -4,7 +4,7 @@ The course is divided into six modules, each covering a different aspect of Micr
 
 Introduction: This module provides an overview of the Microsoft 365 platform, including apps, extensions, and Copilot. It also covers development tools and environment setup, Microsoft Entra ID, and app registrations.
 
-Microsoft Graph & Data Access Essentals: This module covers the basics of Microsoft Graph, including optimizing data usage with query parameters, using common graph endpoints (files, mail, calendar, contacts, SharePoint, planner), accessing Teams data with Microsoft Graph, using change notifications and tracking changes with Microsoft Graph, and implementing a custom Graph Connector. It also covers Azure Function Python Essentials to allow integration of any existing Python based data access.
+Consuming Graph & OpenAPI in Azure Functions: This module covers the basics of consuming Microsoft Graph & OpenAI in Azure Functions (Python / Node). It introduces common Graph endpoints (files, mail, calendar, contacts, Teams, SharePoint, Planner), as well as Change Notifications. We learn how to implement a custom Graph Connector, that we will use later on in Copilot. 
 
 Microsoft Teams Extension Patterns: This module covers building apps for Microsoft Teams, including an overview of the Teams Developer Portal, introduction to Teams Developer Toolkit, tabs in Microsoft Teams, collecting input with task modules, task-oriented interactions with messaging extensions, and building API-based message extensions.
 
@@ -38,14 +38,15 @@ Skills can be acquired through the following resources:
 - Introduction Microsoft Entra ID
 - App Registrations
 
-### Microsoft Graph & Data Access Essentals
+### Consuming Graph & OpenAPI in Azure Functions
 
-- Overview of Microsoft Graph
-- Using Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
-- Accessing Teams Data with Microsoft Graph
+- Azure Function Python Essentials
+- Overview of Microsoft Graph 
+- Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
+- Consuming Microsoft Graph in Azure Functions
 - Microsoft Graph Change Notifications
 - Implementing a custom Graph Connector
-- Azure Function Python Essentials
+- Azure Functions OpenAPI Extensions
 
 ### Microsoft Teams Extension Patterns
 
