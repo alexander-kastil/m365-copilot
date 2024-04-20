@@ -1,0 +1,15 @@
+rnd=$RANDOM
+app=actionext$rnd
+search=searchext$rnd
+
+actid=$(az ad app create --display-name $app --available-to-other-tenants true --query appId -o tsv)
+actsecret=$(az ad app credential reset --id $id --append --query password -o tsv)
+
+echo "Use id in your bot registration for action based ext: " $actid
+echo "Use secret in your bot registration for action based ext: " $actsecret
+
+sid=$(az ad app create --display-name $search --available-to-other-tenants true --query appId -o tsv)
+ssecret=$(az ad app credential reset --id $sid --append --query password -o tsv)
+
+echo "Use id in your bot registration for action based ext: " $sid
+echo "Use secret in your bot registration for action based ext: " $ssecret

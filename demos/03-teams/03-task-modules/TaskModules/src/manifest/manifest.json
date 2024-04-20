@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.7",
+  "id": "{{APPLICATION_ID}}",
+  "version": "{{VERSION}}",
+  "packageName": "{{PACKAGE_NAME}}",
+  "developer": {
+    "name": "Alexander Pajer",
+    "websiteUrl": "https://{{HOSTNAME}}",
+    "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "YouTubePlayer",
+    "full": "YouTubePlayer"
+  },
+  "description": {
+    "short": "YouTube Player with TaskModule",
+    "full": "YouTube Player with TaskModule"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "583e7375-adbd-4217-87bb-0e24bc47f5b8",
+      "name": "YouTubePlayer",
+      "contentUrl": "https://{{HOSTNAME}}/youTubePlayerTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": ["personal"]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["{{HOSTNAME}}"],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
+}
