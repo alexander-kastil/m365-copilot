@@ -1,6 +1,6 @@
 # Building Apps and Plugins for Microsoft 365 Copilot
 
-The course is divided into six modules, each covering a different aspect of Microsoft 365 Copilot. 
+The course is divided into seven modules, each covering a different aspect of Microsoft 365 Copilot. 
 
 Introduction: This module provides an overview of the Microsoft 365 platform, including apps, extensions, and Copilot. It also covers development tools and environment setup, Microsoft Entra ID, and app registrations.
 
