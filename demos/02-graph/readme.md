@@ -10,10 +10,7 @@
 ## Demos
 
 -   Graph Query Params
--   Batching
--   Throttling
--   Manage Groups
--   Working with files
+-   Common Graph Endpoints
 -   Change Notifications
 -   Graph Connectors
 

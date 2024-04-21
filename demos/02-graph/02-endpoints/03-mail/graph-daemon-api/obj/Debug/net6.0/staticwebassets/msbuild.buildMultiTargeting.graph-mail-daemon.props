@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\graph-mail-daemon.props" />
+</Project>
