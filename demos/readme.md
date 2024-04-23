@@ -42,9 +42,9 @@ Skills can be acquired through the following resources:
 
 - Overview of the Microsoft 365 platform
 - Copilot for Microsoft 365 Introduction & Extensions
+- Development Tools & Environment Setup
 - Azure & Entra ID Integration
 - App Registrations & Authentication Flows for Copilot
-- Development Tools & Environment Setup
 
 ### Using Copilot for Microsoft 365 in Office Apps & Chat
 
