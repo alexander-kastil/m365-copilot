@@ -23,7 +23,7 @@ Duration: 4 days
 
 ## Audience
 
-- Microsoft 365 Developers 
+- Microsoft 365 & AI Developers 
 - Decision Makers
 
 ## Prerequisites & Requirements
