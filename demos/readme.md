@@ -2,21 +2,29 @@
 
 The course is divided into seven modules, each covering a different aspect of Extending Copilot for Microsoft 365. 
 
-Module 1: Introduction To Copilot for Microsoft 365 Development This module provides a foundational understanding of the Microsoft 365 platform, introduces Copilot and its extensions, and covers integration with Azure and Entra ID. It also guides through app registrations, authentication flows, and setting up the development environment.
+Module 1: Introduction to Copilot for Microsoft 365 Development This module introduces the Microsoft 365 platform, Copilot extensions, Azure and Entra ID integration, app registrations, authentication flows, and the setup of the development environment.
 
-Module 2: Using Copilot for Microsoft 365 in Office Apps & Chat Participants will learn how to leverage Copilot within Office applications and Teams, understand the nuances of Microsoft Copilot 365 Chat, and master the art of writing effective prompts to interact with Copilot.
+Module 2: Using Copilot for Microsoft 365 in Office Apps & Chat Learners will explore how Copilot integrates with Office Apps and Teams, delve into Microsoft Copilot 365 Chat, and learn to craft effective prompts.
 
-Module 3: Microsoft Graph & Azure Function in the Copilot for Microsoft 365 Ecosystem. This module dives into the Microsoft Graph within the Copilot ecosystem, exploring common endpoints, notifications, and connectors. It also includes essentials of Azure Function Node & Python, and how to consume Microsoft Graph using Azure Functions with OpenAPI extensions.
+Module 3: Microsoft Graph & Azure Function in the Copilot Ecosystem The focus here is on utilizing Microsoft Graph within the Copilot ecosystem, handling common Graph endpoints, notifications, connectors, and integrating Microsoft Graph with Azure Functions using Node, Python, and OpenAPI extensions.
 
-Module 4: Teams For Copilot for Microsoft 365 Developers Focusing on Teams, this module discusses extension patterns, integration with Copilot, and the Teams Developer Toolkit. It also introduces Adaptive Cards and how to create task-oriented interactions with messaging extensions.
+Module 4: Teams for Copilot Developers This module covers Teams extension patterns, the developer portal, integration with Copilot, the Teams Developer Toolkit, DevProxy, Adaptive Cards, and creating API-based message extensions with Azure Functions.
 
-Module 5: Extending Copilot for Microsoft 365 Here, developers will explore the extension architecture of Copilot, compare Microsoft Graph Connectors with plugins, and learn to build plugins using Microsoft Business Applications. The module also covers the integration of Azure OpenAI Search with Copilot.
+Module 5: Extending Copilot for Microsoft 365 Participants will learn about the Copilot extension architecture, the difference between Microsoft Graph Connectors and plugins, and how to build plugins using Microsoft Business Applications, as well as integrating Azure OpenAI Search with Copilot.
 
-Module 6: Copilot for Microsoft 365 Deployment This module covers the various app deployment options, introduces Bicep, and delves into the essentials of Azure Container Apps. It also guides on how to publish API-based message extensions to Azure Container Apps.
+Module 6: Copilot for Microsoft 365 Deployment The module provides an overview of app deployment options, introduces Bicep basics, Azure Container Apps essentials, and the process to publish apps for Copilot for Microsoft 365.
 
-Module 7: Introduction to Teams AI Library The final module introduces the Teams AI library, discusses its integration with Large Language Models, and covers message interaction using message extensions and Adaptive Cards. It also provides samples and use cases to illustrate the concepts.
+Module 7: Introduction to Teams AI Library Finally, the course introduces the Teams AI library, its integration with Large Language Models, message interaction, message extensions, Adaptive Cards capabilities, and practical samples and use cases.
+
+Each module is crafted to provide a comprehensive understanding and hands-on experience with developing and deploying Copilot-enhanced applications in the Microsoft 365 environment.
+
 
 Duration: 4 days
+
+## Audience
+
+- Microsoft 365 Developers 
+- Decision Makers
 
 ## Prerequisites & Requirements
 
@@ -42,8 +50,7 @@ Skills can be acquired through the following resources:
 
 - Overview of Copilot for Microsoft 365 
 - Copilot for Microsoft 365 in Office Apps & Teams
-- Microsoft Copilot 365 Chat
-- Writing effective Prompts
+- Writing effective Prompts for Microsoft Copilot 365 Chat
 
 ### Microsoft Graph & Azure Function in the Copilot for Microsoft 365 Ecosystem
 
@@ -59,9 +66,8 @@ Skills can be acquired through the following resources:
 - Teams Extension Patterns & Developer Portal
 - Teams & Copilot for Microsoft 365 Integration 
 - Teams Developer Toolkit & DevProxy
-- Adaptive Cards Basics
-- Task-oriented interactions with messaging extensions
-- API-based message extension using Azure Functions
+- Task-oriented interactions with Messaging Extensions & Adaptive Cards
+- API-based Message Extension using Azure Functions
 
 ### Extending Copilot for Microsoft 365
 
@@ -75,9 +81,9 @@ Skills can be acquired through the following resources:
 ### Copilot for Microsoft 365 Deployment
 
 - Overview of App Deployment Options
-- Bicep Introduction
+- Understanding Teams Toolkit's Bicep
 - Azure Container Apps Essentials
-- Publish Api based Message Extensions to Azure Container Apps
+- Publish Apps for Copilot for Microsoft 365
 
 ### Introduction to Teams AI Library
 
