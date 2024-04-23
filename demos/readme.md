@@ -30,13 +30,13 @@ Skills can be acquired through the following resources:
 
 ## Modules
 
-### Introduction
+### Introduction to Microsoft 365 Copilot Development​
 
 - Overview of the Microsoft 365 platform
 - Apps, Extensions & Copilot
 - Development Tools & Environment Setup
-- Introduction Microsoft Entra ID
-- App Registrations
+- Microsoft Entra ID App Registrations
+- Introduction to Azure Container Apps
 
 ### Consuming Graph & OpenAPI in Azure Functions
 
@@ -46,15 +46,14 @@ Skills can be acquired through the following resources:
 - Consuming Microsoft Graph in Azure Functions
 - Microsoft Graph Change Notifications
 - Implementing a custom Graph Connector
-- Azure Functions OpenAPI Extensions
+- Azure Function OpenAPI Extensions
 
 ### Microsoft Teams Extension Patterns
 
 - Teams Extension Patterns & Developer Portal
 - Teams Developer Toolkit
-- Tabs in Microsoft Teams
-- Collect input with task modules
-- Task-oriented interactions with messaging extensions
+- Microsoft Teams: Tabs & Modules
+- Task-oriented Interactions with Messaging Extensions
 - Build API-based message extension
 
 ### Using Microsoft 365 Copilot in Office Apps & Teams
@@ -63,7 +62,7 @@ Skills can be acquired through the following resources:
 - Writing effective Prompts
 - Using Copilot in Office Apps & Teams
 
-### Implementing Plugins for Microsoft 365 Copilot
+### Implementing Extensions & Plugins for Microsoft 365 Copilot
 
 - Microsoft 365 Copilot Plugins
 - Copilot Plugin Architecture
