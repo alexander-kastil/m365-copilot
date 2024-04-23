@@ -1,6 +1,6 @@
-# Building Apps and Plugins for Microsoft 365 Copilot
+# Extending Copilot for Microsoft 365
 
-The course is divided into seven modules, each covering a different aspect of Microsoft 365 Copilot. 
+The course is divided into seven modules, each covering a different aspect of Copilot for Microsoft 365. 
 
 Introduction: This module provides an overview of the Microsoft 365 platform, including apps, extensions, and Copilot. It also covers development tools and environment setup, Microsoft Entra ID, and app registrations.
 
@@ -8,9 +8,9 @@ Consuming Graph & OpenAPI in Azure Functions: This module covers the basics of c
 
 Microsoft Teams Extension Patterns: This module covers building apps for Microsoft Teams, including an overview of the Teams Developer Portal, introduction to Teams Developer Toolkit, tabs in Microsoft Teams, collecting input with task modules, task-oriented interactions with messaging extensions, and building API-based message extensions.
 
-Using Microsoft 365 Copilot Office in Apps & Teams: This module provides an overview of Microsoft 365 Copilot, including Copilot prompts and using Copilot in Office Apps & Teams.
+Using Copilot for Microsoft 365 Office in Apps & Teams: This module provides an overview of Copilot for Microsoft 365, including Copilot prompts and using Copilot in Office Apps & Teams.
 
-Implementing Plugins for Microsoft 365 Copilot: This module covers Microsoft 365 Copilot plugins, plugin architecture, message extensions for Microsoft Copilot for Microsoft 365, building plugins using Microsoft Business Applications, Graph Connectors API & Microsoft 365 Copilot, and implementing a Microsoft Graph Connectors for Microsoft 365 Copilot.
+Implementing Plugins for Copilot for Microsoft 365: This module covers Copilot for Microsoft 365 plugins, plugin architecture, message extensions for Microsoft Copilot for Microsoft 365, building plugins using Microsoft Business Applications, Graph Connectors API & Copilot for Microsoft 365, and implementing a Microsoft Graph Connectors for Copilot for Microsoft 365.
 
 Teams Apps & Copilot Plugins Deployment: This module covers app deployment options, Microsoft 365 CLI & Microsoft 365 Desired State Configuration, publishing Microsoft Teams apps, introduction to Azure Container Apps, deploying containers using Azure DevOps, and publishing API-based message extensions to Azure Container Apps.
 
@@ -30,51 +30,51 @@ Skills can be acquired through the following resources:
 
 ## Modules
 
-### Introduction To Microsoft 365 Copilot Development
+### Introduction To Copilot for Microsoft 365 Development
 
 - Overview of the Microsoft 365 platform
-- Microsoft 365 Copilot Introduction & Extensions
+- Copilot for Microsoft 365 Introduction & Extensions
 - Azure & Entra ID Integration
 - App Registrations & Authentication Flows for Copilot
 - Development Tools & Environment Setup
 
-### Using Microsoft 365 Copilot in Office Apps & Teams
+### Using Copilot for Microsoft 365 in Office Apps & Chat
 
-- Overview of Microsoft 365 Copilot 
-- Microsoft 365 Copilot in Office Apps & Teams
+- Overview of Copilot for Microsoft 365 
+- Copilot for Microsoft 365 in Office Apps & Teams
 - Microsoft Copilot 365 Chat
 - Writing effective Prompts
 
 ### Consuming Graph & OpenAPI in Azure Functions
 
-- Overview of Microsoft Graph 
+- Microsoft Graph in the Copilot for Microsoft 365 Ecosystem
 - Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
 - Graph Change Notifications & Graph Connectors
 - Azure Function Node & Python Essentials
 - Consuming Microsoft Graph in Azure Functions
 - Azure Functions OpenAPI Extensions
 
-### Microsoft Teams For Copilot Developers
+### Teams For Copilot for Microsoft 365 Developers
 
 - Teams Extension Patterns & Developer Portal
-- Teams & Microsoft 365 Copilot Integration 
+- Teams & Copilot for Microsoft 365 Integration 
 - Teams Developer Toolkit & DevProxy
 - Adaptive Cards Basics
 - Task-oriented interactions with messaging extensions
 - Build API-based message extension
 
-### Implementing Extensions & Plugins for Microsoft 365 Copilot
+### Extending Copilot for Microsoft 365
 
-- Microsoft 365 Copilot Plugin Architecture
+- Copilot for Microsoft 365 Extension Architecture
+- Microsoft Graph Connectors vs Plugins
+- Microsoft Graph Connectors for Copilot for Microsoft 365
 - Message Extensions for Microsoft Copilot for Microsoft 365
 - Build Plugins using Microsoft Business Applications
-- Graph Connectors API & Microsoft 365 Copilot
-- Implement a Microsoft Graph Connectors for Microsoft 365 Copilot
+- Azure OpenAI Search & Copilot for Microsoft 365 Integration
 
-### Teams Apps & Copilot Plugins Deployment
+### Copilot for Microsoft 365 Deployment
 
 - Overview of App Deployment Options
-- Microsoft 365 CLI & Microsoft 365 Desired State Configuration
 - Bicep Introduction
 - Azure Container Apps Essentials
 - Publish Api based Message Extensions to Azure Container Apps
