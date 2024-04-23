@@ -30,38 +30,39 @@ Skills can be acquired through the following resources:
 
 ## Modules
 
-### Introduction
+### Introduction To Microsoft 365 Copilot Development
 
 - Overview of the Microsoft 365 platform
-- Apps, Extensions & Copilot
+- Microsoft 365 Copilot Introduction & Extensions
+- Azure & Entra ID Integration
+- App Registrations & Authentication Flows for Copilot
 - Development Tools & Environment Setup
-- Introduction Microsoft Entra ID
-- App Registrations
-
-### Consuming Graph & OpenAPI in Azure Functions
-
-- Azure Function Python Essentials
-- Overview of Microsoft Graph 
-- Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
-- Consuming Microsoft Graph in Azure Functions
-- Microsoft Graph Change Notifications
-- Implementing a custom Graph Connector
-- Azure Functions OpenAPI Extensions
-
-### Microsoft Teams Extension Patterns
-
-- Teams Extension Patterns & Developer Portal
-- Teams Developer Toolkit
-- Tabs in Microsoft Teams
-- Collect input with task modules
-- Task-oriented interactions with messaging extensions
-- Build API-based message extension
 
 ### Using Microsoft 365 Copilot in Office Apps & Teams
 
 - Overview of Microsoft 365 Copilot 
-- Writing effective Prompts
 - Using Copilot in Office Apps & Teams
+- Microsoft Copilot 365 Chat
+- Writing effective Prompts
+
+### Consuming Graph & OpenAPI in Azure Functions
+
+- Overview of Microsoft Graph 
+- Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
+- Consuming Microsoft Graph in Azure Functions
+- Microsoft Graph Change Notifications
+- Graph Connectors
+- Azure Function Node & Python Essentials
+- Azure Functions OpenAPI Extensions
+
+### Microsoft Teams For Copilot Developers
+
+- Teams Extension Patterns & Developer Portal
+- Teams & Copilot Integration 
+- Teams Developer Toolkit & DevProxy
+- Adaptive Cards Basics
+- Task-oriented interactions with messaging extensions
+- Build API-based message extension
 
 ### Implementing Plugins for Microsoft 365 Copilot
 
@@ -76,6 +77,7 @@ Skills can be acquired through the following resources:
 
 - Overview of App Deployment Options
 - Microsoft 365 CLI & Microsoft 365 Desired State Configuration
+- Bicep Introduction
 - Azure Container Apps Essentials
 - Publish Api based Message Extensions to Azure Container Apps
 
