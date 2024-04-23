@@ -21,8 +21,8 @@ Duration: 4 days
 ## Prerequisites & Requirements
 
 - Basic Microsoft 365 Platform Development Skills
-- .NET Developer Skills (helpful for some modules)
-- Node JS and basic React Developer Skills (helpful for some modules)
+- Basic Azure Development Skills
+- .NET, Node.js & Python Developer Skills (helpful for some modules)
 
 Skills can be acquired through the following resources:
 
