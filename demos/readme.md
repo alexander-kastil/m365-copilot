@@ -61,7 +61,7 @@ Skills can be acquired through the following resources:
 - Teams Developer Toolkit & DevProxy
 - Adaptive Cards Basics
 - Task-oriented interactions with messaging extensions
-- Build API-based message extension
+- API-based message extension using Azure Functions
 
 ### Extending Copilot for Microsoft 365
 
