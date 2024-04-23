@@ -79,11 +79,11 @@ Skills can be acquired through the following resources:
 - Azure Container Apps Essentials
 - Publish Api based Message Extensions to Azure Container Apps
 
-### Create Copilots with Azure AI Studio
+### Introduction to Teams AI Library
 
-- Introduction & using Azure AI Studio
-- Common AI Models
-- Microsoft Copilot Plugin Architecture
-- Prompt Flows & Embeddings
-- Introduction to Retrieval Augmented Generation (RAG)
-- RAG based Copilots
+- Introduction to Teams AI library
+- Teams AI Library & Large Language Models (LLM)
+- Message Interaction
+- Using Message Extensions
+- Adaptive Cards capabilities
+- Samples & Use Cases
