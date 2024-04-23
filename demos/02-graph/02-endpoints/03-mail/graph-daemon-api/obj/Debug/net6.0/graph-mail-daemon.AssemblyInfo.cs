@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("graph-mail-daemon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc03c1af48a9d1df082c50c833c7c4e41551b37b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ea46d536481090e37acef733832c090f9972dd0")]
 [assembly: System.Reflection.AssemblyProductAttribute("graph-mail-daemon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("graph-mail-daemon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,20 +1,20 @@
 # Extending Copilot for Microsoft 365
 
-The course is divided into seven modules, each covering a different aspect of Copilot for Microsoft 365. 
+The course is divided into seven modules, each covering a different aspect of Extending Copilot for Microsoft 365. 
 
-Introduction: This module provides an overview of the Microsoft 365 platform, including apps, extensions, and Copilot. It also covers development tools and environment setup, Microsoft Entra ID, and app registrations.
+Module 1: Introduction To Copilot for Microsoft 365 Development This module provides a foundational understanding of the Microsoft 365 platform, introduces Copilot and its extensions, and covers integration with Azure and Entra ID. It also guides through app registrations, authentication flows, and setting up the development environment.
 
-Consuming Graph & OpenAPI in Azure Functions: This module covers the basics of consuming Microsoft Graph & OpenAI in Azure Functions (Python / Node). It introduces common Graph endpoints (files, mail, calendar, contacts, Teams, SharePoint, Planner), as well as Change Notifications. We learn how to implement a custom Graph Connector, that we will use later on in Copilot. 
+Module 2: Using Copilot for Microsoft 365 in Office Apps & Chat Participants will learn how to leverage Copilot within Office applications and Teams, understand the nuances of Microsoft Copilot 365 Chat, and master the art of writing effective prompts to interact with Copilot.
 
-Microsoft Teams Extension Patterns: This module covers building apps for Microsoft Teams, including an overview of the Teams Developer Portal, introduction to Teams Developer Toolkit, tabs in Microsoft Teams, collecting input with task modules, task-oriented interactions with messaging extensions, and building API-based message extensions.
+Module 3: Microsoft Graph & Azure Function in the Copilot for Microsoft 365 Ecosystem. This module dives into the Microsoft Graph within the Copilot ecosystem, exploring common endpoints, notifications, and connectors. It also includes essentials of Azure Function Node & Python, and how to consume Microsoft Graph using Azure Functions with OpenAPI extensions.
 
-Using Copilot for Microsoft 365 Office in Apps & Teams: This module provides an overview of Copilot for Microsoft 365, including Copilot prompts and using Copilot in Office Apps & Teams.
+Module 4: Teams For Copilot for Microsoft 365 Developers Focusing on Teams, this module discusses extension patterns, integration with Copilot, and the Teams Developer Toolkit. It also introduces Adaptive Cards and how to create task-oriented interactions with messaging extensions.
 
-Implementing Plugins for Copilot for Microsoft 365: This module covers Copilot for Microsoft 365 plugins, plugin architecture, message extensions for Microsoft Copilot for Microsoft 365, building plugins using Microsoft Business Applications, Graph Connectors API & Copilot for Microsoft 365, and implementing a Microsoft Graph Connectors for Copilot for Microsoft 365.
+Module 5: Extending Copilot for Microsoft 365 Here, developers will explore the extension architecture of Copilot, compare Microsoft Graph Connectors with plugins, and learn to build plugins using Microsoft Business Applications. The module also covers the integration of Azure OpenAI Search with Copilot.
 
-Teams Apps & Copilot Plugins Deployment: This module covers app deployment options, Microsoft 365 CLI & Microsoft 365 Desired State Configuration, publishing Microsoft Teams apps, introduction to Azure Container Apps, deploying containers using Azure DevOps, and publishing API-based message extensions to Azure Container Apps.
+Module 6: Copilot for Microsoft 365 Deployment This module covers the various app deployment options, introduces Bicep, and delves into the essentials of Azure Container Apps. It also guides on how to publish API-based message extensions to Azure Container Apps.
 
-Create copilots with Azure AI Studio: This module is an introduction to Azure AI Studio & the Microsoft Copilot ecosystem, prompt flows & embeddings, introduction to Retrieval Augmented Generation (RAG), and RAG-based Copilots. Azure AI Studio brings together various AI services within the Azure cloud platform, providing a unified experience for AI development
+Module 7: Introduction to Teams AI Library The final module introduces the Teams AI library, discusses its integration with Large Language Models, and covers message interaction using message extensions and Adaptive Cards. It also provides samples and use cases to illustrate the concepts.
 
 Duration: 4 days
 
@@ -45,7 +45,7 @@ Skills can be acquired through the following resources:
 - Microsoft Copilot 365 Chat
 - Writing effective Prompts
 
-### Consuming Graph & OpenAPI in Azure Functions
+### Microsoft Graph & Azure Function in the Copilot for Microsoft 365 Ecosystem
 
 - Microsoft Graph in the Copilot for Microsoft 365 Ecosystem
 - Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
