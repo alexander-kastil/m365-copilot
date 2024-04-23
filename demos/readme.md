@@ -41,7 +41,7 @@ Skills can be acquired through the following resources:
 ### Using Microsoft 365 Copilot in Office Apps & Teams
 
 - Overview of Microsoft 365 Copilot 
-- Using Copilot in Office Apps & Teams
+- Microsoft 365 Copilot in Office Apps & Teams
 - Microsoft Copilot 365 Chat
 - Writing effective Prompts
 
@@ -57,7 +57,7 @@ Skills can be acquired through the following resources:
 ### Microsoft Teams For Copilot Developers
 
 - Teams Extension Patterns & Developer Portal
-- Teams & Copilot Integration 
+- Teams & Microsoft 365 Copilot Integration 
 - Teams Developer Toolkit & DevProxy
 - Adaptive Cards Basics
 - Task-oriented interactions with messaging extensions
@@ -65,8 +65,7 @@ Skills can be acquired through the following resources:
 
 ### Implementing Plugins for Microsoft 365 Copilot
 
-- Microsoft 365 Copilot Plugins
-- Copilot Plugin Architecture
+- Microsoft 365 Copilot Plugin Architecture
 - Message Extensions for Microsoft Copilot for Microsoft 365
 - Build Plugins using Microsoft Business Applications
 - Graph Connectors API & Microsoft 365 Copilot
