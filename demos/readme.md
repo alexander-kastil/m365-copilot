@@ -57,7 +57,7 @@ Skills can be acquired through the following resources:
 - Microsoft Graph in the Copilot for Microsoft 365 Ecosystem
 - Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
 - Graph Change Notifications & Graph Connectors
-- Consuming Microsoft Graph in Azure Functions Node & Python
+- Securely Consuming Microsoft Graph in Azure Functions Node & Python
 - Azure Functions OpenAPI Extensions
 
 ### Teams For Copilot for Microsoft 365 Developers
