@@ -49,10 +49,9 @@ Skills can be acquired through the following resources:
 
 - Overview of Microsoft Graph 
 - Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
-- Consuming Microsoft Graph in Azure Functions
-- Microsoft Graph Change Notifications
-- Graph Connectors
+- Graph Change Notifications & Graph Connectors
 - Azure Function Node & Python Essentials
+- Consuming Microsoft Graph in Azure Functions
 - Azure Functions OpenAPI Extensions
 
 ### Microsoft Teams For Copilot Developers
