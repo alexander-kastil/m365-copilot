@@ -30,42 +30,42 @@ Skills can be acquired through the following resources:
 
 ## Modules
 
-### Introduction to Microsoft 365 Copilot Development​
+### Introduction To Microsoft 365 Copilot Development
 
 - Overview of the Microsoft 365 platform
-- Apps, Extensions & Copilot
+- Microsoft 365 Copilot Introduction & Extensions
+- Azure & Entra ID Integration
+- App Registrations & Authentication Flows for Copilot
 - Development Tools & Environment Setup
-- Microsoft Entra ID App Registrations
-- Introduction to Azure Container Apps
-
-### Consuming Graph & OpenAPI in Azure Functions
-
-- Azure Function Python Essentials
-- Overview of Microsoft Graph 
-- Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
-- Consuming Microsoft Graph in Azure Functions
-- Microsoft Graph Change Notifications
-- Implementing a custom Graph Connector
-- Azure Function OpenAPI Extensions
-
-### Microsoft Teams Extension Patterns
-
-- Teams Extension Patterns & Developer Portal
-- Teams Developer Toolkit
-- Microsoft Teams: Tabs & Modules
-- Task-oriented Interactions with Messaging Extensions
-- Build API-based message extension
 
 ### Using Microsoft 365 Copilot in Office Apps & Teams
 
 - Overview of Microsoft 365 Copilot 
+- Microsoft 365 Copilot in Office Apps & Teams
+- Microsoft Copilot 365 Chat
 - Writing effective Prompts
-- Using Copilot in Office Apps & Teams
+
+### Consuming Graph & OpenAPI in Azure Functions
+
+- Overview of Microsoft Graph 
+- Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
+- Graph Change Notifications & Graph Connectors
+- Azure Function Node & Python Essentials
+- Consuming Microsoft Graph in Azure Functions
+- Azure Functions OpenAPI Extensions
+
+### Microsoft Teams For Copilot Developers
+
+- Teams Extension Patterns & Developer Portal
+- Teams & Microsoft 365 Copilot Integration 
+- Teams Developer Toolkit & DevProxy
+- Adaptive Cards Basics
+- Task-oriented interactions with messaging extensions
+- Build API-based message extension
 
 ### Implementing Extensions & Plugins for Microsoft 365 Copilot
 
-- Microsoft 365 Copilot Plugins
-- Copilot Plugin Architecture
+- Microsoft 365 Copilot Plugin Architecture
 - Message Extensions for Microsoft Copilot for Microsoft 365
 - Build Plugins using Microsoft Business Applications
 - Graph Connectors API & Microsoft 365 Copilot
@@ -75,6 +75,7 @@ Skills can be acquired through the following resources:
 
 - Overview of App Deployment Options
 - Microsoft 365 CLI & Microsoft 365 Desired State Configuration
+- Bicep Introduction
 - Azure Container Apps Essentials
 - Publish Api based Message Extensions to Azure Container Apps
 
