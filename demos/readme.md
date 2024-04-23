@@ -30,7 +30,7 @@ Duration: 4 days
 
 - Basic Microsoft 365 Platform Development Skills
 - Basic Azure Development Skills
-- .NET, Node.js & Python Developer Skills (helpful for some modules)
+- .NET, Node.js & Python Developer Skills (helpful for most modules)
 
 Skills can be acquired through the following resources:
 
