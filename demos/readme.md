@@ -23,14 +23,14 @@ Duration: 4 days
 
 ## Audience
 
-- Microsoft 365 Developers 
+- Microsoft 365 & AI Developers 
 - Decision Makers
 
 ## Prerequisites & Requirements
 
 - Basic Microsoft 365 Platform Development Skills
 - Basic Azure Development Skills
-- .NET, Node.js & Python Developer Skills (helpful for some modules)
+- .NET, Node.js & Python Developer Skills (helpful for most modules)
 
 Skills can be acquired through the following resources:
 
@@ -44,9 +44,9 @@ Skills can be acquired through the following resources:
 
 - Overview of the Microsoft 365 platform
 - Copilot for Microsoft 365 Introduction & Extensions
+- Development Tools & Environment Setup
 - Azure & Entra ID Integration
 - App Registrations & Authentication Flows for Copilot
-- Development Tools & Environment Setup
 
 ### Using Copilot for Microsoft 365 in Office Apps & Chat
 
@@ -58,10 +58,9 @@ Skills can be acquired through the following resources:
 
 - Microsoft Graph in the Copilot for Microsoft 365 Ecosystem
 - Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
+- Securely Consuming Microsoft Graph in Azure Functions Node & Python
 - Graph Change Notifications & Graph Connectors
-- Azure Function Node & Python Essentials
-- Consuming Microsoft Graph in Azure Functions
-- Azure Functions OpenAPI Extensions
+- Azure Functions OpenAPI Extensions Overview
 
 ### Teams For Copilot for Microsoft 365 Developers
 
