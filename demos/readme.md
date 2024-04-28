@@ -36,6 +36,8 @@ Skills can be acquired through the following resources:
 
 [Microsoft 365 - Development Fundamentals](http://<URL_TO_CLASS>)
 
+[az-204](http://<URL_TO_CLASS>)
+
 ## Modules
 
 ### Introduction To Copilot for Microsoft 365 Development
@@ -89,7 +91,7 @@ Skills can be acquired through the following resources:
 
 - Introduction to Teams AI library
 - Teams AI Library & Large Language Models (LLM)
-- Message Interaction
+- Send & Receive Messages with Teams AI Library
 - Using Message Extensions
 - Adaptive Cards capabilities
 - Samples & Use Cases
