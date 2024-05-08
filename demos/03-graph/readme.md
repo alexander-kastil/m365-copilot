@@ -1,11 +1,11 @@
-# Develop Application for Microsoft Graph
+# Microsoft Graph & Azure Function in the Copilot for Microsoft 365 Ecosystem
 
-- Overview of Microsoft Graph
-- Optimize Data Usage with Query Parameters
-- Using Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
-- Accessing Teams Data with Microsoft Graph
-- Use change notifications and track changes with Microsoft Graph
-- Implementing a custom Graph Connector
+- Microsoft Graph Overview
+- Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
+- Microsoft Graph in the Copilot for Microsoft 365 Ecosystem
+- Securely Consuming Microsoft Graph in Azure Functions Node & Python
+- Graph Change Notifications & Graph Connectors
+- Azure Functions OpenAPI Extensions Overview
 
 ## Demos
 

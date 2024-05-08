@@ -1,11 +1,12 @@
 # Using Graph and Query Params
 
-[MS Graph Query Params](https://docs.microsoft.com/en-us/graph/query-parameters)
+## Links & Resources
 
--   Use Graph in .NET use App Reg graph-console
--   Ad-hoc Demos
+[Use the Microsoft Search API to query data](https://learn.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-1.0)
 
-# Ad-hoc Demos
+[Use query parameters to customize responses](https://learn.microsoft.com/en-us/graph/query-parameters?tabs=http)
+
+## Demos
 
 $select:
 
