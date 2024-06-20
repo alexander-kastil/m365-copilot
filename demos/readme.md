@@ -43,10 +43,12 @@ Skills can be acquired through the following resources:
 ### Introduction To Copilot for Microsoft 365 Development
 
 - Overview of the Microsoft 365 platform
+- Understanding Large Language Models (LLMs)
 - Copilot for Microsoft 365 Introduction & Extensions
 - Development Tools & Environment Setup
-- Azure & Entra ID Integration
-- App Registrations & Authentication Flows for Copilot
+- Microsoft Entra ID App Registrations & Authentication Flows for Copilot
+- Bicep Fundamentals
+- Using DevProxy
 
 ### Using Copilot for Microsoft 365 in Office Apps & Chat
 

@@ -1,15 +1,18 @@
-# Introduction
+# Introduction & Tooling
 
 - Overview of the Microsoft 365 platform
-- Apps, Extensions & Copilot
+- Understanding Large Language Models (LLMs)
+- Copilot for Microsoft 365 Introduction & Extensions
 - Development Tools & Environment Setup
-- Microsoft Entra ID App Registrations
+- Microsoft Entra ID App Registrations & Authentication Flows for Copilot
+- Bicep Fundamentals
+- DevProxy
 
 ## Readings
 
 [Authentication flow support in MSAL](https://learn.microsoft.com/en-us/entra/identity-platform/msal-authentication-flows)
 
-[App Sideloading -Allow users to upload custom apps](https://learn.microsoft.com/en-us/microsoftteams/teams-custom-app-policies-and-settings#allow-users-to-upload-custom-apps)
+[App Side-loading -Allow users to upload custom apps](https://learn.microsoft.com/en-us/microsoftteams/teams-custom-app-policies-and-settings#allow-users-to-upload-custom-apps)
 
 ## Extensions
 
