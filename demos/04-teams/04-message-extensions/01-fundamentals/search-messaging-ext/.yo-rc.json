@@ -1,9 +1,0 @@
-{
-  "generator-teams": {
-    "promptValues": {
-      "developer": "Alexander Pajer"
-    },
-    "libraryName": "searchMessagingExt",
-    "generator-version": "3.5.0"
-  }
-}

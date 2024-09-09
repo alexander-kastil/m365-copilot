@@ -1,9 +1,0 @@
-{
-  "generator-teams": {
-    "promptValues": {
-      "developer": "Alexander Pajer"
-    },
-    "libraryName": "teamsTabs",
-    "generator-version": "3.4.0"
-  }
-}
