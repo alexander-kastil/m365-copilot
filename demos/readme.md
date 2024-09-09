@@ -30,7 +30,7 @@ Duration: 4 days
 
 - Basic Microsoft 365 Platform Development Skills
 - Basic Azure Development Skills
-- .NET, Node.js & Python Developer Skills (helpful for most modules)
+- C#, Node.js & Python Developer Skills (helpful for most modules)
 
 Skills can be acquired through the following resources:
 
@@ -43,12 +43,12 @@ Skills can be acquired through the following resources:
 ### Introduction To Copilot for Microsoft 365 Development
 
 - Overview of the Microsoft 365 platform
-- Understanding Large Language Models (LLMs)
+- Generative AI & Large Language Models (LLMs)
 - Copilot for Microsoft 365 Introduction & Extensions
+- Azure AI Studio vs Copilot Studio
 - Development Tools & Environment Setup
 - Microsoft Entra ID App Registrations & Authentication Flows for Copilot
 - Bicep Fundamentals
-- Using DevProxy
 
 ### Using Copilot for Microsoft 365 in Office Apps & Chat
 
@@ -62,7 +62,7 @@ Skills can be acquired through the following resources:
 - Consuming Common Graph Endpoints (Files, Mail, Calendar, Contacts, SharePoint, Planner)
 - Microsoft Graph in the Copilot for Microsoft 365 Ecosystem
 - Securely Consuming Microsoft Graph in Azure Functions Node & Python
-- Graph Change Notifications & Graph Connectors
+- Understanding Graph Connectors
 - Azure Functions OpenAPI Extensions Overview
 
 ### Teams For Copilot for Microsoft 365 Developers
@@ -70,17 +70,19 @@ Skills can be acquired through the following resources:
 - Teams Extension Patterns & Developer Portal
 - Teams & Copilot for Microsoft 365 Integration 
 - Teams Developer Toolkit & DevProxy
-- Task-oriented interactions with Messaging Extensions & Adaptive Cards
+- Introduction to Adaptive Cards
+- Task-oriented interactions with Messaging Extensions 
 - API-based Message Extension using Azure Functions
+- Understanding Single Sign-On (SSO) 
 
 ### Extending Copilot for Microsoft 365
 
 - Copilot for Microsoft 365 Extension Architecture
+- Semantic Index
 - Microsoft Graph Connectors vs Plugins
 - Microsoft Graph Connectors for Copilot for Microsoft 365
 - Message Extensions for Microsoft Copilot for Microsoft 365
 - Build Plugins using Microsoft Business Applications
-- Azure OpenAI Search & Copilot for Microsoft 365 Integration
 
 ### Copilot for Microsoft 365 Deployment
 
@@ -89,11 +91,11 @@ Skills can be acquired through the following resources:
 - Azure Container Apps Essentials
 - Publish Apps for Copilot for Microsoft 365
 
-### Introduction to Teams AI Library
+# Create custom copilots with Azure AI Studio
 
-- Introduction to Teams AI library
-- Teams AI Library & Large Language Models (LLM)
-- Send & Receive Messages with Teams AI Library
-- Using Message Extensions
-- Adaptive Cards capabilities
-- Samples & Use Cases
+- Overview Azure AI Studio
+- Using Azure AI Studio
+- Microsoft Copilot Studio Plugin Architecture
+- Using Prompt Flow
+- Introduction to Retrieval Augmented Generation (RAG)
+- RAG based Copilots

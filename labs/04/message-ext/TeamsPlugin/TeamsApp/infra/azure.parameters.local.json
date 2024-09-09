@@ -13,6 +13,15 @@
     },
     "botAppDomain": {
       "value": "${{BOT_DOMAIN}}"
+    },
+    "graphEntraAppClientId": {
+      "value": "${{GRAPH_ENTRA_APP_ID}}"
+    },
+    "graphEntraAppClientSecret": {
+      "value": "${{SECRET_GRAPH_ENTRA_APP_CLIENT_SECRET}}"
+    },
+    "connectionName": {
+      "value": "${{CONNECTION_NAME}}"
     }
   }
 }

@@ -10,6 +10,13 @@ namespace TeamsPlugin.Search;
 public class SearchApp : TeamsActivityHandler
 {
     private readonly string _adaptiveCardFilePath = Path.Combine(".", "Resources", "helloWorldCard.json");
+        private readonly string connectionName;
+
+        public SearchApp(IConfiguration configuration)
+        {
+            connectionName = configuration["CONNECTION_NAME"];
+        }    
+
     // Search
     protected override async Task<MessagingExtensionResponse> OnTeamsMessagingExtensionQueryAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionQuery query, CancellationToken cancellationToken)
     {

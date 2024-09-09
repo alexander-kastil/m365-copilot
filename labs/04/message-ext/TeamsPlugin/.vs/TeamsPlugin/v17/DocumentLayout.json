@@ -1,12 +1,190 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\teamsapp\\infra\\azure.local.bicep||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|solutionrelative:teamsapp\\infra\\azure.local.bicep||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\teamsapp\\infra\\azure.parameters.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|solutionrelative:teamsapp\\infra\\azure.parameters.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7D8D96-204E-4856-8648-7075A54B9416}|TeamsPlugin.csproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\search\\searchapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7D8D96-204E-4856-8648-7075A54B9416}|TeamsPlugin.csproj|solutionrelative:search\\searchapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7D8D96-204E-4856-8648-7075A54B9416}|TeamsPlugin.csproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7D8D96-204E-4856-8648-7075A54B9416}|TeamsPlugin.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7D8D96-204E-4856-8648-7075A54B9416}|TeamsPlugin.csproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7D8D96-204E-4856-8648-7075A54B9416}|TeamsPlugin.csproj|solutionrelative:config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\teamsapp\\teamsapp.local.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|solutionrelative:teamsapp\\teamsapp.local.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\teamsapp\\env\\.env.local||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|solutionrelative:teamsapp\\env\\.env.local||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\teamsapp\\infra\\entra\\entra.graph.manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|solutionrelative:teamsapp\\infra\\entra\\entra.graph.manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\teamsapp\\apppackage\\manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|solutionrelative:teamsapp\\apppackage\\manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|d:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\teamsplugin\\teamsapp\\infra\\entra\\entra.bot.manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90594588-B230-4916-9D56-50579EC4A713}|TeamsApp\\TeamsApp.ttkproj|solutionrelative:teamsapp\\infra\\entra\\entra.bot.manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "azure.local.bicep",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\infra\\azure.local.bicep",
+              "RelativeDocumentMoniker": "TeamsApp\\infra\\azure.local.bicep",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\infra\\azure.local.bicep",
+              "RelativeToolTip": "TeamsApp\\infra\\azure.local.bicep",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-21T07:44:42.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "azure.parameters.local.json",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\infra\\azure.parameters.local.json",
+              "RelativeDocumentMoniker": "TeamsApp\\infra\\azure.parameters.local.json",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\infra\\azure.parameters.local.json",
+              "RelativeToolTip": "TeamsApp\\infra\\azure.parameters.local.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-21T07:44:15.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SearchApp.cs",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\Search\\SearchApp.cs",
+              "RelativeDocumentMoniker": "Search\\SearchApp.cs",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\Search\\SearchApp.cs",
+              "RelativeToolTip": "Search\\SearchApp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T06:26:41.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T06:25:43.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Config.cs",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\Config.cs",
+              "RelativeDocumentMoniker": "Config.cs",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\Config.cs",
+              "RelativeToolTip": "Config.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T06:25:21.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "entra.graph.manifest.json",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\infra\\entra\\entra.graph.manifest.json",
+              "RelativeDocumentMoniker": "TeamsApp\\infra\\entra\\entra.graph.manifest.json",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\infra\\entra\\entra.graph.manifest.json",
+              "RelativeToolTip": "TeamsApp\\infra\\entra\\entra.graph.manifest.json",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAIwCYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-21T06:17:35.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "manifest.json",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\appPackage\\manifest.json",
+              "RelativeDocumentMoniker": "TeamsApp\\appPackage\\manifest.json",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\appPackage\\manifest.json",
+              "RelativeToolTip": "TeamsApp\\appPackage\\manifest.json",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAD0AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-21T06:16:08.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "teamsapp.local.yml",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\teamsapp.local.yml",
+              "RelativeDocumentMoniker": "TeamsApp\\teamsapp.local.yml",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\teamsapp.local.yml",
+              "RelativeToolTip": "TeamsApp\\teamsapp.local.yml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAIwDQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-06-21T05:52:54.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": ".env.local",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\env\\.env.local",
+              "RelativeDocumentMoniker": "TeamsApp\\env\\.env.local",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\env\\.env.local",
+              "RelativeToolTip": "TeamsApp\\env\\.env.local",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-21T05:50:07.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "entra.bot.manifest.json",
+              "DocumentMoniker": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\infra\\entra\\entra.bot.manifest.json",
+              "RelativeDocumentMoniker": "TeamsApp\\infra\\entra\\entra.bot.manifest.json",
+              "ToolTip": "D:\\git-classes\\m365-copilot-dev\\labs\\04\\message-ext\\TeamsPlugin\\TeamsApp\\infra\\entra\\entra.bot.manifest.json",
+              "RelativeToolTip": "TeamsApp\\infra\\entra\\entra.bot.manifest.json",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-21T05:56:21.975Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

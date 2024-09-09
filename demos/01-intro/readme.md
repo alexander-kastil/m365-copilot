@@ -1,12 +1,13 @@
-# Introduction & Tooling
+# Introduction To Copilot for Microsoft 365 Development
 
 - Overview of the Microsoft 365 platform
 - Understanding Large Language Models (LLMs)
+- Overview Azure AI Studio
 - Copilot for Microsoft 365 Introduction & Extensions
 - Development Tools & Environment Setup
 - Microsoft Entra ID App Registrations & Authentication Flows for Copilot
 - Bicep Fundamentals
-- DevProxy
+- Using DevProxy
 
 ## Readings
 

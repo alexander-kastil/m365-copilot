@@ -9,6 +9,11 @@ param botEntraAppClientId string
 param botDisplayName string
 param botAppDomain string
 
+param graphEntraAppClientId string
+@secure()
+param graphEntraAppClientSecret string
+param connectionName string
+
 module azureBotRegistration './botRegistration/azurebot.bicep' = {
   name: 'Azure-Bot-registration'
   params: {
@@ -16,5 +21,8 @@ module azureBotRegistration './botRegistration/azurebot.bicep' = {
     botAadAppClientId: botEntraAppClientId
     botAppDomain: botAppDomain
     botDisplayName: botDisplayName
+    graphEntraAppClientId: graphEntraAppClientId
+    graphEntraAppClientSecret: graphEntraAppClientSecret
+    connectionName: connectionName
   }
 }

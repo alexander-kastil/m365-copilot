@@ -17,21 +17,21 @@ provision:
   # Create or reuse an existing Microsoft Entra application for bot.
   - uses: aadApp/create
     with:
-        name: ${{APP_INTERNAL_NAME}}-bot-${{TEAMSFX_ENV}}
-        generateClientSecret: true
-        signInAudience: AzureADMultipleOrgs
+      name: ${{APP_INTERNAL_NAME}}-graph-${{TEAMSFX_ENV}}
+      generateClientSecret: true
+      signInAudience: AzureADMultipleOrgs
     writeToEnvironmentFile:
-        clientId: BOT_ID
-        clientSecret: SECRET_BOT_PASSWORD
-        objectId: BOT_ENTRA_APP_OBJECT_ID
-        tenantId: BOT_ENTRA_APP_TENANT_ID
-        authority: BOT_ENTRA_APP_OAUTH_AUTHORITY
-        authorityHost: BOT_ENTRA_APP_OAUTH_AUTHORITY_HOST
+      clientId: GRAPH_ENTRA_APP_ID
+      clientSecret: SECRET_GRAPH_ENTRA_APP_CLIENT_SECRET
+      objectId: GRAPH_ENTRA_APP_OBJECT_ID
+      tenantId: GRAPH_ENTRA_APP_TENANT_ID
+      authority: GRAPH_ENTRA_APP_OAUTH_AUTHORITY
+      authorityHost: GRAPH_ENTRA_APP_OAUTH_AUTHORITY_HOST
 
   - uses: aadApp/update
     with:
-        manifestPath: "./infra/entra/entra.bot.manifest.json"
-        outputFilePath : "./build/entra.bot.manifest.${{TEAMSFX_ENV}}.json"
+      manifestPath: "./infra/entra/entra.graph.manifest.json"
+      outputFilePath : "./build/entra.graph.manifest.${{TEAMSFX_ENV}}.json"
 
   - uses: arm/deploy
     with:
@@ -46,10 +46,11 @@ provision:
   # Generate runtime appsettings to JSON file
   - uses: file/createOrUpdateJsonFile
     with:
-      target: ../appsettings.Development.json
+      target: ./appsettings.Development.json
       content:
         BOT_ID: ${{BOT_ID}}
         BOT_PASSWORD: ${{SECRET_BOT_PASSWORD}}
+        CONNECTION_NAME: ${{CONNECTION_NAME}}
 
   # Validate using manifest schema
   - uses: teamsApp/validateManifest
