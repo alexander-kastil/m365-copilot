@@ -1,4 +1,4 @@
-# Developing AI Apps and Plugins for Copilot for Microsoft 365 & Microsoft Teams
+# Developing AI enabled Solutions and Copilots for Microsoft 365 & Microsoft Teams
 
 This repository contains the content for the Developing Apps and Plugins for Microsoft 365 & Copilot workshop. The workshop is designed to provide a hands-on experience for developers to learn how to build applications and plugins for Microsoft 365 and Microsoft Copilot. The workshop is designed to be delivered in a classroom setting, but the content can also be used for self-paced learning.
 
