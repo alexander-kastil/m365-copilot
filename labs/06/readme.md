@@ -1,3 +1,1 @@
-# Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
-
-[Build Plugins and Connectors for Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/modules/build-plugins-connectors-microsoft-copilot-microsoft-365/)
+# Implement Teams AI Solutions using Teams AI Library

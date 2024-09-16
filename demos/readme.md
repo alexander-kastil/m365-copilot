@@ -32,7 +32,11 @@ Skills can be acquired through the following resources:
 
 - Overview of the Microsoft 365 platform & Copilot for Microsoft 365
 - Generative AI & Large Language Models (LLMs)
+- Semantic Index
+- Microsoft Copilot extensibility fundamentals
+- Choose a Copilot extensibility development path
 - Using Copilot for Microsoft 365 in Office Apps 
+- Teams Toolkit & Bicep Fundamentals
 - Development Tools & Environment Setup
 
 ### Craft effective prompts for Microsoft Copilot for Microsoft 365
@@ -51,7 +55,7 @@ Skills can be acquired through the following resources:
 - Create connector actions for Microsoft Copilot for Microsoft 365 in Copilot Studio
 - Create conversational actions for Microsoft Copilot for Microsoft 365 in Copilot Studio
 
-### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
+### Teams Developer Essentials
 
 - Teams Extension Patterns & Developer Portal
 - Teams & Copilot for Microsoft 365 Integration 
@@ -63,24 +67,13 @@ Skills can be acquired through the following resources:
 
 ### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
 
-- Microsoft Copilot extensibility fundamentals
-- Choose a Copilot extensibility development path
 - Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio
-
-### Extending Copilot for Microsoft 365
+- Guided Project - Build a message extension plugin with TypeScript (TS) for Microsoft Copilot
 - Copilot for Microsoft 365 Extension Architecture
-- Semantic Index
 - Microsoft Graph Connectors vs Plugins
 - Microsoft Graph Connectors for Copilot for Microsoft 365
 - Message Extensions for Microsoft Copilot for Microsoft 365
 - Build Plugins using Microsoft Business Applications
-
-### Copilot for Microsoft 365 Deployment
-
-- Overview of App Deployment Options
-- Bicep Fundamentals & Teams Toolkit
-- Azure Container Apps Essentials
-- Publish Apps for Copilot for Microsoft 365
 
 # Implement Teams AI Solutions using Teams AI Library
 
