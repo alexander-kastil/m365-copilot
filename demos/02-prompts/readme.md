@@ -1,4 +1,4 @@
-# Using Copilot for Microsoft 365 in Office Apps & Chat
+# Craft effective prompts for Microsoft Copilot for Microsoft 365
 
 - Introduction to prompting Techniques
 - Summarize with Microsoft Copilot for Microsoft 365
@@ -11,4 +11,3 @@
 [Copilot Lab](https://copilot.cloud.microsoft/en-US/prompts)
 
 [The art and science of prompting](https://adoption.microsoft.com/files/copilot/Prompt-ingredients-one-pager.pdf)
-

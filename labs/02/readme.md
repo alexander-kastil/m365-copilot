@@ -1,6 +1,6 @@
 # Craft effective prompts for Microsoft Copilot for Microsoft 365
 
-[Craft effective prompts for Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/modules/craft-effective-prompts-microsoft-copilot-microsoft-365/)
+[Craft effective prompts for Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/paths/craft-effective-prompts-copilot-microsoft-365/)
 
 [Explore the possibilities with Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/modules/explore-possibilities-microsoft-365-copilot/)
 

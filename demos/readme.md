@@ -4,10 +4,23 @@ This workshop is designed to provide a hands-on experience for developers to lea
 
 - MS-4010: Build plugins and connectors for Copilot for Microsoft 365
 
-The course is divided into seven modules, each covering a different aspect: 
+Introduction to Copilot for Microsoft 365 & Microsoft Teams AI Apps:
+This module provides an overview of the Microsoft 365 platform and Copilot for Microsoft 365, focusing on generative AI and large language models (LLMs). It covers the fundamentals of Microsoft Copilot extensibility and guides you in choosing a development path. You’ll also learn how to use Copilot for Microsoft 365 in Office Apps, along with the basics of Teams Toolkit, Bicep, and development tools setup.
 
+Craft Effective Prompts for Microsoft Copilot for Microsoft 365:
+In this module, you’ll explore various prompting techniques to effectively interact with Microsoft Copilot for Microsoft 365. You’ll learn how to summarize, create, draft, edit, and transform content using Copilot. Additionally, the module covers how to ask questions and analyze content with Copilot for Microsoft 365.
 
+Extend Microsoft Copilot for Microsoft 365 with Copilot Studio:
+This module delves into the fundamentals of Microsoft Copilot extensibility and introduces Copilot Studio actions. You’ll learn to create prompt, connector, and conversational actions for Microsoft Copilot for Microsoft 365 within Copilot Studio. The focus is on building and extending functionalities to enhance user interactions.
 
+Teams Developer Essentials:
+Here, you’ll learn about Teams extension patterns and the Developer Portal, along with the integration of Teams and Copilot for Microsoft 365. The module covers the Teams Developer Toolkit, DevProxy, and introduces Adaptive Cards. It aims to equip you with essential skills for developing within the Teams environment.
+
+Build Plugins and Connectors for Microsoft Copilot for Microsoft 365:
+This module explains the differences between Microsoft Graph Connectors and Plugins, and how to connect Copilot for Microsoft 365 to external data in real-time using message extension plugins built with .NET and Visual Studio. You’ll also learn about the Copilot for Microsoft 365 Extension Architecture, Microsoft Graph Connectors, and message extensions. The guided project involves building a message extension plugin with TypeScript for Microsoft Copilot.
+
+Implement Teams AI Solutions using Teams AI Library:
+In this module, you’ll be introduced to the Teams AI library and its integration with large language models (LLMs). You’ll learn about message interaction, using message extensions, and the capabilities of Adaptive Cards. The module includes samples and use cases to help you implement AI solutions effectively within Teams.
 
 Duration: 4 days
 
@@ -20,9 +33,9 @@ Duration: 4 days
 
 - Basic Microsoft 365 Platform & Teams Development Skills
 - Basic Azure Development Skills
-- C#, Node.js & Python Developer Skills (helpful for most modules)
+- C#, Node.js Developer Skills (helpful for most modules)
 
-Skills can be acquired through the following resources:
+Microsoft 365 Skills can be acquired through the following resources:
 
 [Microsoft 365 - Development Fundamentals](http://<URL_TO_CLASS>)
 
@@ -61,23 +74,22 @@ Skills can be acquired through the following resources:
 - Teams & Copilot for Microsoft 365 Integration 
 - Teams Developer Toolkit & DevProxy
 - Introduction to Adaptive Cards
-- Task-oriented interactions with Messaging Extensions 
-- API-based Message Extension using Azure Functions
-- Understanding Single Sign-On (SSO) 
 
 ### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
 
-- Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio
-- Guided Project - Build a message extension plugin with TypeScript (TS) for Microsoft Copilot
-- Copilot for Microsoft 365 Extension Architecture
 - Microsoft Graph Connectors vs Plugins
+- Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio
+- Copilot for Microsoft 365 Extension Architecture
 - Microsoft Graph Connectors for Copilot for Microsoft 365
 - Message Extensions for Microsoft Copilot for Microsoft 365
 - Build Plugins using Microsoft Business Applications
+- Guided Project - Build a message extension plugin with TypeScript (TS) for Microsoft Copilot
 
-# Implement Teams AI Solutions using Teams AI Library
+### Implement Teams AI Solutions using Teams AI Library
 
-- Teams AI Library
-- Teams AI library capabilities
-- Building Custom Copilots using Teams AI Library
-- Teams AI Library and Single Sign-On (SSO)
+- Introduction to Teams AI library
+- Teams AI Library & Large Language Models (LLM)
+- Message Interaction
+- Using Message Extensions
+- Adaptive Cards capabilities
+- Samples & Use Cases
