@@ -1,4 +1,4 @@
-### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
+### Build Plugins and Connectors for Copilot for Microsoft 365
 
 - Using Microsoft Copilot in Office Apps & Teams
 - Message Extensions for Microsoft Copilot for Microsoft 365
