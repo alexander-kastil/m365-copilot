@@ -74,6 +74,7 @@ Microsoft 365 Skills can be acquired through the following resources:
 - Teams & Copilot for Microsoft 365 Integration 
 - Teams Developer Toolkit & DevProxy
 - Introduction to Adaptive Cards
+- Introduction to the Microsoft Bot Framework
 
 ### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
 
