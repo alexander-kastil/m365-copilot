@@ -2,4 +2,4 @@
 
 [Build Plugins and Connectors for Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/paths/build-plugins-connectors-microsoft-copilot-microsoft-365/)
 
-(Extend Microsoft Copilot for Microsoft 365)[https://learn.microsoft.com/en-us/training/paths/copilot-m365-extensibility/]
+[Extend Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/paths/copilot-m365-extensibility/)
