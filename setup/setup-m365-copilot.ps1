@@ -63,23 +63,18 @@ code --install-extension redhat.vscode-yaml
 code --install-extension bencoleman.armview
 code --install-extension mdickin.markdown-shortcuts
 code --install-extension mhutchie.git-graph 
-code --install-extension ms-azure-devops.azure-pipelines		
 code --install-extension vs-publisher-1448185.keyoti-changeallendoflinesequence
-code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension alex-pattison.theme-cobalt3
-code --install-extension savranweb.cosmosdbsqlapi
 
 # Azurite Storage Emulator & Function Core Tools v4
 npm install -g azure-functions-core-tools@4 --unsafe-perm true --force
 npm install -g azurite
 
-# Azure Developer CLI
-powershell -ex AllSigned -c "Invoke-RestMethod 'https://aka.ms/install-azd.ps1' | Invoke-Expression"
-
 # Install Angular
-Write-Host "Installing Angular - 6/6" -ForegroundColor yellow
-npx @angular/cli@latest analytics off
-npm i -g @angular/cli
+Write-Host "Installing Visual Studio Templates" -ForegroundColor yellow
+dotnet new install M365Advocacy.Teams.Templates
+dotnet new install M365Advocacy.GraphConnectors.Templates
+
 
 # Finished Msg
 Write-Host "Finished Software installation" -ForegroundColor yellow
