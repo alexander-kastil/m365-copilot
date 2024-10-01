@@ -4,7 +4,6 @@
 - Generative AI & Large Language Models (LLMs)
 - Using Copilot for Microsoft 365 in Office Apps 
 - Development Tools & Environment Setup
-- Bicep Fundamentals
 
 ## Readings
 

@@ -68,13 +68,13 @@ Microsoft 365 Skills can be acquired through the following resources:
 - Create connector actions for Microsoft Copilot for Microsoft 365 in Copilot Studio
 - Create conversational actions for Microsoft Copilot for Microsoft 365 in Copilot Studio
 
-### Teams Developer Essentials
+### Teams Developer Essentials: Adaptive Cards and Bots
 
 - Teams Extension Patterns & Developer Portal
-- Teams & Copilot for Microsoft 365 Integration 
 - Teams Developer Toolkit & DevProxy
+- Bicep Fundamentals
 - Introduction to Adaptive Cards
-- Introduction to the Microsoft Bot Framework
+- App Registrations & Microsoft Bot Framework
 
 ### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
 
