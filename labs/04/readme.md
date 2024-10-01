@@ -1,6 +1,6 @@
 # Teams Developer Essentials
 
-[Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio](https://learn.microsoft.com/en-us/training/modules/copilot-message-extension-plugins/)
+[Create a message extension](https://learn.microsoft.com/en-us/training/modules/copilot-message-extension-plugins/4-exercise-create-a-message-extension)
 
 [Create engaging messages with Adaptive Cards](https://learn.microsoft.com/en-us/training/modules/adaptive-cards-create-engaging-messages/)
 
