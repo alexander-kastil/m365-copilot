@@ -1,6 +1,8 @@
-# Plugins for Copilot for Microsoft 365
+# Add Skills using Plugins for Copilot for Microsoft 365
 
+[API Plugins](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-api-plugins)
 
+[Teams Message Extension Plugins](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-message-extension-bot)
 
 ## Links & Resources
 

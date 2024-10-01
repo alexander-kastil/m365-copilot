@@ -1,6 +1,6 @@
 # Microsoft Graph Connector Samples
 
-
+[Microsoft Graph Connectors for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-graph-connector)
 
 ## Links & Resources
 

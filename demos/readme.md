@@ -1,4 +1,4 @@
-# Developing AI enabled Solutions and Copilots for Microsoft 365 & Microsoft Teams
+# Developing AI Agents and Copilots for Microsoft 365
 
 This workshop is designed to provide a hands-on experience for developers to learn how to build AI solutions using the Teams AI Library for Microsoft Teams as well as plugins and extensions for Copilot for Microsoft 365. It also prepares for the following Applied Skills:
 
@@ -17,12 +17,12 @@ Teams Developer Essentials:
 Here, you’ll learn about Teams extension patterns and the Developer Portal, along with the integration of Teams and Copilot for Microsoft 365. The module covers the Teams Developer Toolkit, DevProxy, and introduces Adaptive Cards. It aims to equip you with essential skills for developing within the Teams environment.
 
 Build Plugins and Connectors for Microsoft Copilot for Microsoft 365:
-This module explains the differences between Microsoft Graph Connectors and Plugins, and how to connect Copilot for Microsoft 365 to external data in real-time using message extension plugins built with .NET and Visual Studio. You’ll also learn about the Copilot for Microsoft 365 Extension Architecture, Microsoft Graph Connectors, and message extensions. The guided project involves building a message extension plugin with TypeScript for Microsoft Copilot.
+This module introduces the Copilot for Microsoft 365 Extension Architecture, explains the differences between Microsoft Graph Connectors and Plugins. It demonstrates Bot Framework based Message Extension Plugins and the simpler Api based Plugins. It demonstrates how to implement Graph Connectors that can be used in Microsoft 365 Copilot as well Outlook using Context IQ. 
 
 Implement Teams AI Solutions using Teams AI Library:
-In this module, you’ll be introduced to the Teams AI library and its integration with large language models (LLMs). You’ll learn about message interaction, using message extensions, and the capabilities of Adaptive Cards. The module includes samples and use cases to help you implement AI solutions effectively within Teams.
+In this module, you’ll be introduced to the Teams AI library and its integration with large language models (LLMs). You’ll learn about message interaction, using message extensions, and the capabilities of Adaptive Cards. The module also introduces the skills to implement Custom Engine Agents for Microsoft 365.
 
-Duration: 4 days
+Duration: 5 days
 
 ## Audience
 
@@ -90,7 +90,6 @@ Microsoft 365 Skills can be acquired through the following resources:
 
 - Introduction to Teams AI library
 - Teams AI Library & Large Language Models (LLM)
-- Message Interaction
-- Using Message Extensions
-- Adaptive Cards capabilities
-- Samples & Use Cases
+- Message Interactions
+- Message Extensions & Adaptive Cards capabilities
+- Implementing Custom Engine Agents For Microsoft 365
