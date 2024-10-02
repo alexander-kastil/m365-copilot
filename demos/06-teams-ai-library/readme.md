@@ -2,7 +2,7 @@
 
 - Introduction to Teams AI library
 - Teams AI Library & Large Language Models (LLM)
-- Message Interactions
+- Bot Framework and Message Interactions
 - Message Extensions & Adaptive Cards capabilities
 - Implementing Custom Engine Agents For Microsoft 365
 

@@ -11,16 +11,16 @@ Craft Effective Prompts for Microsoft Copilot for Microsoft 365:
 In this module, you’ll explore various prompting techniques to effectively interact with Microsoft Copilot for Microsoft 365. You’ll learn how to summarize, create, draft, edit, and transform content using Copilot. Additionally, the module covers how to ask questions and analyze content with Copilot for Microsoft 365.
 
 Extend Microsoft Copilot for Microsoft 365 with Copilot Studio:
-This module delves into the fundamentals of Microsoft Copilot extensibility and introduces Copilot Studio actions. You’ll learn to create prompt, connector, and conversational actions for Microsoft Copilot for Microsoft 365 within Copilot Studio. The focus is on building and extending functionalities to enhance user interactions.
+This module delves into the fundamentals of Microsoft Copilot extensibility and introduces Copilot Studio Actions. You’ll learn to create Low Code Prompts, Connectors, and Conversational Actions for Microsoft Copilot for Microsoft 365 within Copilot Studio. 
 
-Teams Developer Essentials:
-Here, you’ll learn about Teams extension patterns and the Developer Portal, along with the integration of Teams and Copilot for Microsoft 365. The module covers the Teams Developer Toolkit, DevProxy, and introduces Adaptive Cards. It aims to equip you with essential skills for developing within the Teams environment.
+Copilot & Teams Developer Essentials:
+Here, you’ll learn about Teams extension patterns and the Developer Portal, along with the integration of Teams and Copilot for Microsoft 365. The module covers the Teams Developer Toolkit, DevTunnels, Deploying Azure Resources and App Registrations using Bicep. It covers the Basics of Microsoft Bot Framework and introduces Adaptive Cards. It aims to equip you with essential skills for developing AI related solutions within the Teams environment.
 
 Build Plugins and Connectors for Microsoft Copilot for Microsoft 365:
-This module introduces the Copilot for Microsoft 365 Extension Architecture, explains the differences between Microsoft Graph Connectors and Plugins. It demonstrates Bot Framework based Message Extension Plugins and the simpler Api based Plugins. It demonstrates how to implement Graph Connectors that can be used in Microsoft 365 Copilot as well Outlook using Context IQ. 
+This module introduces the Pro Code Copilot for Microsoft 365 Extension Architecture, explains the differences between Microsoft Graph Connectors and Plugins. It demonstrates Bot Framework based Message Extension Plugins and the simpler Api based Plugins. It demonstrates how to implement Graph Connectors that can be used in Microsoft 365 Copilot as well Outlook using Context IQ. 
 
 Implement Teams AI Solutions using Teams AI Library:
-In this module, you’ll be introduced to the Teams AI library and its integration with large language models (LLMs). You’ll learn about message interaction, using message extensions, and the capabilities of Adaptive Cards. The module also introduces the skills to implement Custom Engine Agents for Microsoft 365.
+In this module, you’ll be introduced to the Teams AI library and its integration with large language models (LLMs). It introduces the skills to implement Custom Engine Agents for Microsoft 365 by leveraging the Teams AI Library, Bot Framework, Message Interactions and Adaptive Cards capabilities.
 
 Duration: 5 days
 
@@ -90,6 +90,6 @@ Microsoft 365 Skills can be acquired through the following resources:
 
 - Introduction to Teams AI library
 - Teams AI Library & Large Language Models (LLM)
-- Message Interactions
+- Bot Framework and Message Interactions
 - Message Extensions & Adaptive Cards capabilities
 - Implementing Custom Engine Agents For Microsoft 365
