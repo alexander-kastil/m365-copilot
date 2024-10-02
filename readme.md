@@ -1,4 +1,4 @@
-# Developing AI enabled Solutions and Copilots for Microsoft 365 & Microsoft Teams
+# Developing AI Agents and Copilots for Microsoft 365
 
 Companion Material for Class Delivery by [Alexander Kastil](https://www.integrations.at/kontakt-impressum.aspx)
 
