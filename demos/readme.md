@@ -1,14 +1,14 @@
-# Developing AI Agents and Copilots for Microsoft 365
+# Developing Agents and Copilots for Microsoft 365
 
 This workshop is designed to provide a hands-on experience for developers to learn how to build AI solutions using the Teams AI Library for Microsoft Teams as well as plugins and extensions for Copilot for Microsoft 365. It also prepares for the following Applied Skills:
 
 - MS-4010: Build plugins and connectors for Copilot for Microsoft 365
 
-Introduction to Developing AI Agents and Copilots for Microsoft 365:
-This module provides an overview of the Microsoft 365 platform and Copilot for Microsoft 365, focusing on generative AI and large language models (LLMs). It covers the fundamentals of Microsoft Copilot extensibility and guides you in choosing a development path. You’ll also learn how to use Copilot for Microsoft 365 in Office Apps, along with the basics of Teams Toolkit, Bicep, and development tools setup.
+Introduction to Developing Agents and Copilots for Microsoft 365:
+This module provides an overview of the Microsoft 365 platform and the Copilot for Microsoft 365 ecosystem. It introduces basic concepts like Generative AI, Large Language Models (LLMs) and Semantic Index. Finally it covers the Fundamentals of Microsoft Copilot Extensibility and guides you in choosing a development path. 
 
 Craft effective prompts for Microsoft Copilot for Microsoft 365:
-In this module, you’ll explore various prompting techniques to effectively interact with Microsoft Copilot for Microsoft 365. You’ll learn how to summarize, create, draft, edit, and transform content using Copilot. Additionally, the module covers how to ask questions and analyze content with Copilot for Microsoft 365.
+In this module, you’ll explore various prompting techniques to effectively interact with Microsoft Copilot for Microsoft 365. You’ll learn how to summarize, create, draft, edit, and transform content using Copilot. Additionally, the module covers how to ask questions and analyze content with Copilot for Microsoft 365. You’ll also learn how to use Copilot for Microsoft 365 in Office Apps.
 
 Extend Microsoft Copilot for Microsoft 365 with Copilot Studio:
 This module delves into the fundamentals of Microsoft Copilot extensibility and introduces Copilot Studio Actions. You’ll learn to create Low Code Prompts, Connectors, and Conversational Actions for Microsoft Copilot for Microsoft 365 within Copilot Studio. 
@@ -35,19 +35,19 @@ Duration: 5 days
 - Basic Azure Development Skills
 - C#, Node.js Developer Skills (helpful for most modules)
 
-Microsoft 365 Skills can be acquired through the following resources:
+Microsoft 365 Developer Skills can be acquired through the following resources:
 
 [Microsoft 365 - Development Fundamentals](http://<URL_TO_CLASS>)
 
 ## Modules
 
-### Introduction to Developing AI Agents and Copilots for Microsoft 365
+### Introduction to Developing Agents and Copilots for Microsoft 365
 
 - Overview of the Microsoft 365 platform & Copilot for Microsoft 365
 - Generative AI & Large Language Models (LLMs)
-- What is a Semantic Index
 - Microsoft Copilot extensibility fundamentals
 - Choose a Copilot extensibility development path
+- What is a Semantic Index
 - Development Tools & Environment Setup
 
 ### Craft effective prompts for Microsoft Copilot for Microsoft 365
@@ -91,4 +91,3 @@ Microsoft 365 Skills can be acquired through the following resources:
 - Bot Framework SDK and Message Interactions
 - OpenAI- and Azure OpenAI Assistants API
 - Message Extensions & Adaptive Cards capabilities
-- Implementing Custom Engine Agents For Microsoft 365
