@@ -54,26 +54,26 @@ static class ContentService
         AccessType = AccessType.Grant
       };
 
-      if (a.RelativePath!.EndsWith("use-the-api.md"))
-      {
-        acl = new()
-        {
-          Type = AclType.User,
-          // AdeleV
-          Value = "6de8ec04-6376-4939-ab47-83a2c85ab5f5",
-          AccessType = AccessType.Grant
-        };
-      }
-      else if (a.RelativePath.EndsWith("traverse-the-graph.md"))
-      {
-        acl = new()
-        {
-          Type = AclType.Group,
-          // Sales and marketing
-          Value = "a9fd282f-4634-4cba-9dd4-631a2ee83cd3",
-          AccessType = AccessType.Grant
-        };
-      }
+      //if (a.RelativePath!.Contains("angular"))
+      //{
+      //  acl = new()
+      //  {
+      //    Type = AclType.User,
+      //    // Alexander Kastil
+      //    Value = "25853297-1418-4fc4-96ec-22f8bc83a64b",
+      //    AccessType = AccessType.Grant
+      //  };
+      //}
+      //else if (a.RelativePath.EndsWith("traverse-the-graph.md"))
+      //{
+      //  acl = new()
+      //  {
+      //    Type = AclType.Group,
+      //    // Integrations Developers
+      //    Value = "b7076d3d-b863-4a87-a865-ff0c5faf3dbb",
+      //    AccessType = AccessType.Grant
+      //  };
+      //}
 
       var docId = GetDocId(a);
 

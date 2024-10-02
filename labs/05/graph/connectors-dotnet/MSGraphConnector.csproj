@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <AssemblyName>connector</AssemblyName>
+        <AssemblyName>graph-connector</AssemblyName>
         <TargetFramework>net8.0</TargetFramework>
         <RootNamespace>MSGraphConnector</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>

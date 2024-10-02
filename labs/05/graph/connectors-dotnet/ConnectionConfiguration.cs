@@ -25,9 +25,9 @@ static class ConnectionConfiguration
         {
             return new ExternalConnection
             {
-                Id = "msgraphdocs",
-                Name = "Microsoft Graph Connector",
-                Description = "Documentation for Microsoft Graph API which explains what Microsoft Graph is and how to use it"
+                Id = "kbdocs",
+                Name = "Knowledge Base Docs",
+                Description = "Documentation for Microsoft Graph API, Angular Components and Semantic Kernel which explains base concepts and provides examples.",
             };
         }
     }

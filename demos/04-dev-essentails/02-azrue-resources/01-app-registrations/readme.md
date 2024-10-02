@@ -20,7 +20,7 @@
 
 ### Run Demo
 
-Replace tanant id und client id in `index.js`:
+Replace TenantId and Client id in `index.js`:
 
 ```javascript
 async function doAuth() {

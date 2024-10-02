@@ -45,15 +45,14 @@ Microsoft 365 Skills can be acquired through the following resources:
 
 - Overview of the Microsoft 365 platform & Copilot for Microsoft 365
 - Generative AI & Large Language Models (LLMs)
-- Semantic Index
+- What is a Semantic Index
 - Microsoft Copilot extensibility fundamentals
 - Choose a Copilot extensibility development path
-- Using Copilot for Microsoft 365 in Office Apps 
-- Teams Toolkit & Bicep Fundamentals
 - Development Tools & Environment Setup
 
 ### Craft effective prompts for Microsoft Copilot for Microsoft 365
 
+- Using Copilot for Microsoft 365 in Office Apps 
 - Introduction to prompting Techniques
 - Summarize with Microsoft Copilot for Microsoft 365
 - Create and draft with Microsoft Copilot for Microsoft 365
