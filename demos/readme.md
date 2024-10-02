@@ -22,7 +22,7 @@ This module introduces the Pro Code Copilot for Microsoft 365 Extension Architec
 Implement Custom Engine Agents for Microsoft 365 using Teams AI Library:
 In this module, you’ll be introduced to the Teams AI library and its integration with large language models (LLMs). It introduces the skills to implement Custom Engine Agents for Microsoft 365 by leveraging the Teams AI Library, Bot Framework, Message Interactions and Adaptive Cards capabilities.
 
-Duration: 5 days
+Duration: 4 days
 
 ## Audience
 
