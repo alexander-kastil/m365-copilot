@@ -1,23 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <AssemblyName>connector</AssemblyName>
-    <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>MSGraphConnector</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <UserSecretsId>43afefd4-1497-49e0-afa6-32ec7847bffc</UserSecretsId>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Azure.Identity" Version="1.11.4" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Graph" Version="5.35.0" />
-    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="resultLayout.json" CopyToOutputDirectory="PreserveNewest" />
-  </ItemGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <AssemblyName>connector</AssemblyName>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>MSGraphConnector</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <UserSecretsId>43afefd4-1497-49e0-afa6-32ec7847bffc</UserSecretsId>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Azure.Identity" Version="1.11.4" />
+        <PackageReference Include="Markdig" Version="0.37.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Graph" Version="5.35.0" />
+        <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+        <PackageReference Include="YamlDotNet" Version="16.1.3" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="resultLayout.json" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+    <ItemGroup>
+        <ContentFiles Include="content\**" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+    <Target Name="CopyContentFolder" AfterTargets="Build">
+        <Copy SourceFiles="@(ContentFiles)" DestinationFiles="@(ContentFiles->'$(OutputPath)\content\%(RecursiveDir)%(Filename)%(Extension)')" />
+    </Target>
 </Project>

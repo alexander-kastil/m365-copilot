@@ -1,28 +1,64 @@
 using Microsoft.Graph.Models.ExternalConnectors;
+using YamlDotNet.Serialization;
+using Markdig;
 
-class Document
+public interface IMarkdown
 {
+  string? Markdown { get; set; }
+}
+
+
+class Document : IMarkdown
+{
+  [YamlMember(Alias = "title")]
   public string? Title { get; set; }
+  [YamlMember(Alias = "description")]
+  public string? Description { get; set; }
+  public string? Markdown { get; set; }
   public string? Content { get; set; }
-  public string? Url { get; set; }
+  public string? RelativePath { get; set; }
   public string? IconUrl { get; set; }
+  public string? Url { get; set; }
 }
 
 static class ContentService
 {
   static IEnumerable<Document> Extract()
   {
-    // return the documents to import
-    return [];
+    var docs = new List<Document>();
+
+    var contentFolder = "content";
+    var baseUrl = new Uri("https://learn.microsoft.com/graph/");
+    var contentFolderPath = Path.Combine(Directory.GetCurrentDirectory(), contentFolder);
+    var files = Directory.GetFiles(contentFolder, "*.md", SearchOption.AllDirectories);
+
+    foreach (var file in files)
+    {
+      try
+      {
+        var contents = File.ReadAllText(file);
+        var doc = contents.GetContents<Document>();
+        doc.Content = Markdown.ToHtml(doc.Markdown ?? "");
+        doc.RelativePath = Path.GetRelativePath(contentFolderPath, file);
+        doc.Url = new Uri(baseUrl, doc.RelativePath!.Replace(".md", "")).ToString();
+        doc.IconUrl = "https://raw.githubusercontent.com/waldekmastykarz/img/main/microsoft-graph.png";
+        docs.Add(doc);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex.Message);
+      }
+    }
+
+    return docs;
   }
 
   static string GetDocId(Document doc)
   {
-    // Generate a unique ID for the document.
-    // ID can't contain /
-    // Generate an ID that you can resolve back to the document's URL
-    // so that URL to item resolvers can properly record activity.
-    return string.Empty;
+    var id = doc.RelativePath!
+      .Replace(Path.DirectorySeparatorChar.ToString(), "__")
+      .Replace(".md", "");
+    return id;
   }
 
   static IEnumerable<ExternalItem> Transform(IEnumerable<Document> documents)
@@ -65,12 +101,14 @@ static class ContentService
     foreach (var item in items)
     {
       Console.Write(string.Format("Loading item {0}...", item.Id));
+
       try
       {
         await GraphService.Client.External
           .Connections[Uri.EscapeDataString(ConnectionConfiguration.ExternalConnection.Id!)]
           .Items[item.Id]
           .PutAsync(item);
+
         Console.WriteLine("DONE");
       }
       catch (Exception ex)
