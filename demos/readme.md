@@ -14,7 +14,7 @@ Extend Microsoft Copilot for Microsoft 365 with Copilot Studio:
 This module delves into the fundamentals of Microsoft Copilot extensibility and introduces Copilot Studio Actions. You’ll learn to create Low Code Prompts, Connectors, and Conversational Actions for Microsoft Copilot for Microsoft 365 within Copilot Studio. 
 
 Teams & Azure Essentials for Copilot Developers:
-Here, you’ll learn about Teams extension patterns and the Developer Portal, along with the integration of Teams and Copilot for Microsoft 365. The module covers the Teams Developer Toolkit, DevTunnels, Deploying Azure Resources and App Registrations using Bicep. It covers the Basics of Microsoft Bot Framework and introduces Adaptive Cards. It aims to equip you with essential skills for developing AI related solutions within the Teams environment.
+Here, you’ll learn about Teams extension patterns and the Developer Portal, along with the integration of Teams and Copilot for Microsoft 365. The module covers the Teams Developer Toolkit, DevTunnels, Deploying Azure Resources and App Registrations using Bicep. It aims to equip you with essential skills for developing AI Solutions within the Teams environment.
 
 Build Plugins and Connectors for Microsoft Copilot for Microsoft 365:
 This module introduces the Pro Code Copilot for Microsoft 365 Extension Architecture, explains the differences between Microsoft Graph Connectors and Plugins. It demonstrates Bot Framework based Message Extension Plugins and the simpler Api based Plugins. It demonstrates how to implement Graph Connectors that can be used in Microsoft 365 Copilot as well Outlook using Context IQ. 
@@ -72,7 +72,6 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - Teams Developer Portal, Toolkit & DevTunnel
 - Deploy Azure Resources with Bicep
 - App Registrations & Single Sign-On (SSO)
-- Adaptive Cards and Bot Framework SDK
 
 ### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
 
