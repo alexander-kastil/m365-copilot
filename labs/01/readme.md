@@ -1,1 +1,1 @@
-# Introduction to Copilot for Microsoft 365 & Microsoft Teams AI Apps
+# Introduction to Developing AI Agents and Copilots for Microsoft 365
