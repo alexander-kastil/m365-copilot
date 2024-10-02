@@ -1,6 +1,6 @@
 # Developing Agents and Copilots for Microsoft 365
 
-This workshop is designed to provide a hands-on experience for developers to learn how to build AI solutions using the Teams AI Library for Microsoft Teams as well as plugins and extensions for Copilot for Microsoft 365. It also prepares for the following Applied Skills:
+This workshop is designed to provide a hands-on experience for developers to learn how to build Plugins and Connectors for Copilot for Microsoft 365 as well as Custom Engine Agents using the Teams AI Library for Microsoft Teams. It also prepares for the following Applied Skills:
 
 - MS-4010: Build plugins and connectors for Copilot for Microsoft 365
 
