@@ -1,25 +1,5 @@
 using Microsoft.Graph.Models.ExternalConnectors;
-using YamlDotNet.Serialization;
 using Markdig;
-
-public interface IMarkdown
-{
-  string? Markdown { get; set; }
-}
-
-
-class Document : IMarkdown
-{
-  [YamlMember(Alias = "title")]
-  public string? Title { get; set; }
-  [YamlMember(Alias = "description")]
-  public string? Description { get; set; }
-  public string? Markdown { get; set; }
-  public string? Content { get; set; }
-  public string? RelativePath { get; set; }
-  public string? IconUrl { get; set; }
-  public string? Url { get; set; }
-}
 
 static class ContentService
 {
@@ -61,37 +41,62 @@ static class ContentService
     return id;
   }
 
-  static IEnumerable<ExternalItem> Transform(IEnumerable<Document> documents)
+  static IEnumerable<ExternalItem> Transform(IEnumerable<Document> content)
   {
-    return documents.Select(doc =>
+    var baseUrl = new Uri("https://learn.microsoft.com/graph/");
+
+    return content.Select(a =>
     {
-      var docId = GetDocId(doc);
+      var acl = new Acl
+      {
+        Type = AclType.Everyone,
+        Value = "everyone",
+        AccessType = AccessType.Grant
+      };
+
+      if (a.RelativePath!.EndsWith("use-the-api.md"))
+      {
+        acl = new()
+        {
+          Type = AclType.User,
+          // AdeleV
+          Value = "6de8ec04-6376-4939-ab47-83a2c85ab5f5",
+          AccessType = AccessType.Grant
+        };
+      }
+      else if (a.RelativePath.EndsWith("traverse-the-graph.md"))
+      {
+        acl = new()
+        {
+          Type = AclType.Group,
+          // Sales and marketing
+          Value = "a9fd282f-4634-4cba-9dd4-631a2ee83cd3",
+          AccessType = AccessType.Grant
+        };
+      }
+
+      var docId = GetDocId(a);
+
       return new ExternalItem
       {
         Id = docId,
         Properties = new()
         {
           AdditionalData = new Dictionary<string, object> {
-            // Add properties as defined in the schema in ConnectionConfiguration.cs
-            { "title", doc.Title ?? "" },
-            { "url", doc.Url ?? "" },
-            { "iconUrl", doc.IconUrl ?? "" }
-          }
+            { "title", a.Title ?? "" },
+            { "description", a.Description ?? "" },
+            { "url", new Uri(baseUrl, a.RelativePath!.Replace(".md",    "")).ToString() }
+    }
         },
         Content = new()
         {
-          Value = doc.Content ?? "",
-          Type = ExternalItemContentType.Text
+          Value = a.Content ?? "",
+          Type = ExternalItemContentType.Html
         },
         Acl = new()
-        {
-          new()
-          {
-            Type = AclType.Everyone,
-            Value = "everyone",
-            AccessType = AccessType.Grant
-          }
-        }
+  {
+          acl
+  }
       };
     });
   }
