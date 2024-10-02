@@ -1,61 +1,102 @@
 using Microsoft.Graph.Models.ExternalConnectors;
-
-class Document
-{
-  public string? Title { get; set; }
-  public string? Content { get; set; }
-  public string? Url { get; set; }
-  public string? IconUrl { get; set; }
-}
+using Markdig;
 
 static class ContentService
 {
   static IEnumerable<Document> Extract()
   {
-    // return the documents to import
-    return [];
+    var docs = new List<Document>();
+
+    var contentFolder = "content";
+    var baseUrl = new Uri("https://learn.microsoft.com/graph/");
+    var contentFolderPath = Path.Combine(Directory.GetCurrentDirectory(), contentFolder);
+    var files = Directory.GetFiles(contentFolder, "*.md", SearchOption.AllDirectories);
+
+    foreach (var file in files)
+    {
+      try
+      {
+        var contents = File.ReadAllText(file);
+        var doc = contents.GetContents<Document>();
+        doc.Content = Markdown.ToHtml(doc.Markdown ?? "");
+        doc.RelativePath = Path.GetRelativePath(contentFolderPath, file);
+        doc.Url = new Uri(baseUrl, doc.RelativePath!.Replace(".md", "")).ToString();
+        doc.IconUrl = "https://raw.githubusercontent.com/waldekmastykarz/img/main/microsoft-graph.png";
+        docs.Add(doc);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex.Message);
+      }
+    }
+
+    return docs;
   }
 
   static string GetDocId(Document doc)
   {
-    // Generate a unique ID for the document.
-    // ID can't contain /
-    // Generate an ID that you can resolve back to the document's URL
-    // so that URL to item resolvers can properly record activity.
-    return string.Empty;
+    var id = doc.RelativePath!
+      .Replace(Path.DirectorySeparatorChar.ToString(), "__")
+      .Replace(".md", "");
+    return id;
   }
 
-  static IEnumerable<ExternalItem> Transform(IEnumerable<Document> documents)
+  static IEnumerable<ExternalItem> Transform(IEnumerable<Document> content)
   {
-    return documents.Select(doc =>
+    var baseUrl = new Uri("https://learn.microsoft.com/graph/");
+
+    return content.Select(a =>
     {
-      var docId = GetDocId(doc);
+      var acl = new Acl
+      {
+        Type = AclType.Everyone,
+        Value = "everyone",
+        AccessType = AccessType.Grant
+      };
+
+      //if (a.RelativePath!.Contains("angular"))
+      //{
+      //  acl = new()
+      //  {
+      //    Type = AclType.User,
+      //    // Alexander Kastil
+      //    Value = "25853297-1418-4fc4-96ec-22f8bc83a64b",
+      //    AccessType = AccessType.Grant
+      //  };
+      //}
+      //else if (a.RelativePath.EndsWith("traverse-the-graph.md"))
+      //{
+      //  acl = new()
+      //  {
+      //    Type = AclType.Group,
+      //    // Integrations Developers
+      //    Value = "b7076d3d-b863-4a87-a865-ff0c5faf3dbb",
+      //    AccessType = AccessType.Grant
+      //  };
+      //}
+
+      var docId = GetDocId(a);
+
       return new ExternalItem
       {
         Id = docId,
         Properties = new()
         {
           AdditionalData = new Dictionary<string, object> {
-            // Add properties as defined in the schema in ConnectionConfiguration.cs
-            { "title", doc.Title ?? "" },
-            { "url", doc.Url ?? "" },
-            { "iconUrl", doc.IconUrl ?? "" }
-          }
+            { "title", a.Title ?? "" },
+            { "description", a.Description ?? "" },
+            { "url", new Uri(baseUrl, a.RelativePath!.Replace(".md",    "")).ToString() }
+    }
         },
         Content = new()
         {
-          Value = doc.Content ?? "",
-          Type = ExternalItemContentType.Text
+          Value = a.Content ?? "",
+          Type = ExternalItemContentType.Html
         },
         Acl = new()
-        {
-          new()
-          {
-            Type = AclType.Everyone,
-            Value = "everyone",
-            AccessType = AccessType.Grant
-          }
-        }
+  {
+          acl
+  }
       };
     });
   }
@@ -65,12 +106,14 @@ static class ContentService
     foreach (var item in items)
     {
       Console.Write(string.Format("Loading item {0}...", item.Id));
+
       try
       {
         await GraphService.Client.External
           .Connections[Uri.EscapeDataString(ConnectionConfiguration.ExternalConnection.Id!)]
           .Items[item.Id]
           .PutAsync(item);
+
         Console.WriteLine("DONE");
       }
       catch (Exception ex)

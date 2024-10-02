@@ -1,21 +1,11 @@
-# Introduction to Copilot for Microsoft 365 & Microsoft Teams AI Apps
+# Introduction to Developing AI Agents and Copilots for Microsoft 365
 
 - Overview of the Microsoft 365 platform & Copilot for Microsoft 365
 - Generative AI & Large Language Models (LLMs)
-- Using Copilot for Microsoft 365 in Office Apps 
+- What is a Semantic Index
+- Microsoft Copilot extensibility fundamentals
+- Choose a Copilot extensibility development path
 - Development Tools & Environment Setup
-
-## Readings
-
-[Authentication flow support in MSAL](https://learn.microsoft.com/en-us/entra/identity-platform/msal-authentication-flows)
-
-[App Side-loading -Allow users to upload custom apps](https://learn.microsoft.com/en-us/microsoftteams/teams-custom-app-policies-and-settings#allow-users-to-upload-custom-apps)
-
-## Extensions
-
-[Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
-
-[Adaptive Card Previewer](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.vscode-adaptive-cards)
 
 ## Additional Labs & Walkthroughs
 

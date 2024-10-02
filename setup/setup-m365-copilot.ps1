@@ -70,11 +70,13 @@ code --install-extension alex-pattison.theme-cobalt3
 npm install -g azure-functions-core-tools@4 --unsafe-perm true --force
 npm install -g azurite
 
-# Install Angular
+# Install Visual Studio Templates
 Write-Host "Installing Visual Studio Templates" -ForegroundColor yellow
 dotnet new install M365Advocacy.Teams.Templates
 dotnet new install M365Advocacy.GraphConnectors.Templates
 
+# Install Microsoft Graph PowerShell Module
+Install-Module Microsoft.Graph -Scope CurrentUser
 
 # Finished Msg
 Write-Host "Finished Software installation" -ForegroundColor yellow

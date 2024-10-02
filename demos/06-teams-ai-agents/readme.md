@@ -1,4 +1,4 @@
-# Implement Teams AI Solutions using Teams AI Library
+# Implement Custom Engine Agents for Microsoft 365 using Teams AI Library
 
 - Introduction to Teams AI library
 - Teams AI Library & Large Language Models (LLM)
