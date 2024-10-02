@@ -72,7 +72,7 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - Teams Developer Portal, Toolkit & DevTunnel
 - Deploy Azure Resources with Bicep
 - App Registrations & Single Sign-On (SSO)
-- Introduction to Adaptive Cards
+- Adaptive Cards and Bot Framework SDK
 
 ### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
 
