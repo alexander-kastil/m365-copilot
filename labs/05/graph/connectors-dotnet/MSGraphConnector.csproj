@@ -7,6 +7,7 @@
     <RootNamespace>MSGraphConnector</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>43afefd4-1497-49e0-afa6-32ec7847bffc</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -15,7 +15,7 @@ $requiredResourceAccess = (@{
 })
 
 # create the application
-$app = New-MgApplication -DisplayName "Microsoft Graph documentation" -RequiredResourceAccess $requiredResourceAccess -ErrorAction Stop
+$app = New-MgApplication -DisplayName "Microsoft Graph Connector" -RequiredResourceAccess $requiredResourceAccess -ErrorAction Stop
 
 # grant admin consent
 $graphSpId = $(Get-MgServicePrincipal -Filter "appId eq '00000003-0000-0000-c000-000000000000'" -ErrorAction Stop).Id
