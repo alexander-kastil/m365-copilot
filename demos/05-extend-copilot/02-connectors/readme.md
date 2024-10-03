@@ -1,6 +1,12 @@
-# Microsoft Graph Connector Samples
+# Microsoft Graph Connectors
+
+## Links & Resources
 
 [Microsoft Graph Connectors for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-graph-connector)
+
+## Demos 
+
+- PartsInventoryConnector is a sample connector that indexes parts inventory data from a database. This connector sample powers experiences such as Microsoft Search, Copilot in Teams, the Microsoft 365 App, and more.
 
 ## Links & Resources
 
