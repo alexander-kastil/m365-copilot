@@ -1,3 +1,5 @@
+Cooking Pad Kra Pao
+
 This is one of the most useful recipes I've ever shared. It's an all-purpose formula you can use to turn any protein you have into delicious pad kra pao - Thai holy basil stir fry. Any meat, seafood, or any leftover cooked meats you might have lingering in the fridge. It's the only recipe you need to make any kind of pad kra pao you want! With this recipe, you'll have one of the most popular Thai dishes on the table in less than 30 minutes!
 
 Home » Recipes » All Recipes » Entrées
