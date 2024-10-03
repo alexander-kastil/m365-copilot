@@ -8,6 +8,18 @@
 
     ```bash
     dotnet user-secrets list
+   ```
+
+- Deploy a Graph Connector:
+
+    ```bash
+    dotnet run -- create-connection
     ```
 
-- Examine created Connectors at [Microsoft 365 Admin Center](https://admin.microsoft.com/#/MicrosoftSearch/connectors)    
+- Load data into a Graph Connector:
+
+    ```bash
+    dotnet run -- load-content
+    ```    
+
+- Examine created Connectors at [Microsoft 365 Admin Center](https://admin.microsoft.com/#/MicrosoftSearch/connectors)        
