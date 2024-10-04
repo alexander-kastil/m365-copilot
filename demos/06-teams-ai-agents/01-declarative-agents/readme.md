@@ -1,5 +1,9 @@
 # Build a declarative agent for Microsoft 365 Copilot
 
+[Lab E1 - First Declarative agent](https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/01-declarative-copilot/)
+
+# Steps
+
 Install Teams Toolkit CLI:
 
 ```bash
