@@ -11,3 +11,5 @@
 [Copilot Lab](https://copilot.cloud.microsoft/en-US/prompts)
 
 [The art and science of prompting](https://adoption.microsoft.com/files/copilot/Prompt-ingredients-one-pager.pdf)
+
+![prompting](_images/prompting.jpg)
