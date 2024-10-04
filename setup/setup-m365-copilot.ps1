@@ -72,5 +72,14 @@ dotnet new install M365Advocacy.GraphConnectors.Templates
 # Install Microsoft Graph PowerShell Module
 Install-Module Microsoft.Graph -Scope CurrentUser
 
+# Install Dev Tunnel CLI
+winget install Microsoft.devtunnel
+
+# Install Teams Toolkit CLI
+npm install -g @microsoft/teamsapp-cli
+
+# Install Kiota
+dotnet tool install --global Microsoft.OpenApi.Kiota
+
 # Finished Msg
 Write-Host "Finished Software installation" -ForegroundColor yellow

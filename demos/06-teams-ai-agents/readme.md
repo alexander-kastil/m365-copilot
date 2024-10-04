@@ -1,5 +1,6 @@
-# Implement Custom Engine Agents for Microsoft 365 using Teams AI Library
+# Implement Agents for Microsoft 365 using Teams AI Library
 
+- Declarative Agents vs Custom Engine Agents
 - Introduction to Teams AI library
 - Teams AI Library & Large Language Models (LLM)
 - Bot Framework and Message Interactions

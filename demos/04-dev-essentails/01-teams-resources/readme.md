@@ -6,6 +6,10 @@
 
 [App Side-loading -Allow users to upload custom apps](https://learn.microsoft.com/en-us/microsoftteams/teams-custom-app-policies-and-settings#allow-users-to-upload-custom-apps)
 
+[Teams Toolkit CLI](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/teams-toolkit-cli?pivots=version-three)
+
+[Dev Tunnel Docs](https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/overview)
+
 ## Extensions
 
 [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
