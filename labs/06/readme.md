@@ -1,3 +1,5 @@
-# Implement Custom Engine Agents for Microsoft 365 using Teams AI Library
+# Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
 
-[Build a custom engine agent to chat with your data using Teams AI library and Teams Toolkit](https://learn.microsoft.com/en-us/microsoftteams/platform/teams-ai-library-tutorial?source=recommendations)
+[Build Plugins and Connectors for Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/paths/build-plugins-connectors-microsoft-copilot-microsoft-365/)
+
+[Extend Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/paths/copilot-m365-extensibility/)

@@ -76,16 +76,6 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - App Registrations & Single Sign-On (SSO)
 - Introduction to Bot Framework SDK
 
-### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
-
-- Microsoft Graph Connectors vs Plugins
-- Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio
-- Copilot for Microsoft 365 Extension Architecture
-- Microsoft Graph Connectors for Copilot for Microsoft 365
-- Message Extensions for Microsoft Copilot for Microsoft 365
-- Build Plugins using Microsoft Business Applications
-- Guided Project - Build a message extension plugin with TypeScript (TS) for Microsoft Copilot
-
 ### Implement Agents for Microsoft 365 using Teams AI Library
 
 - Declarative Agents vs Custom Engine Agents
@@ -95,3 +85,13 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - Bot Framework and Message Interactions
 - Message Extensions & Adaptive Cards capabilities
 - Implementing Custom Engine Agents for Microsoft 365
+
+### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
+
+- Microsoft Graph Connectors vs Plugins
+- Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio
+- Copilot for Microsoft 365 Extension Architecture
+- Microsoft Graph Connectors for Copilot for Microsoft 365
+- Message Extensions for Microsoft Copilot for Microsoft 365
+- Build Plugins using Microsoft Business Applications
+- Guided Project - Build a message extension plugin with TypeScript (TS) for Microsoft Copilot
