@@ -15,9 +15,11 @@ const model = new OpenAIModel({
   useSystemMessages: true,
   logRequests: true,
 });
+
 const prompts = new PromptManager({
   promptsFolder: path.join(__dirname, "../prompts"),
 });
+
 const planner = new ActionPlanner({
   model,
   prompts,
