@@ -1,10 +1,11 @@
-import { MemoryStorage, MessageFactory, TurnContext } from "botbuilder";
+import { CardFactory, MemoryStorage, MessageFactory, TurnContext } from "botbuilder";
 import * as path from "path";
 import config from "../config";
 import fs from 'fs';
+import { createResponseCard } from './card';
 
 // See https://aka.ms/teams-ai-library to learn more about the Teams AI library.
-import { Application, ActionPlanner, OpenAIModel, PromptManager } from "@microsoft/teams-ai";
+import { Application, ActionPlanner, OpenAIModel, PromptManager, AI, PredictedSayCommand } from "@microsoft/teams-ai";
 
 // Create AI components. remove azureApiVersion
 const model = new OpenAIModel({
@@ -58,6 +59,7 @@ const app = new Application({
   storage,
   ai: {
     planner,
+    enable_feedback_loop: true,
   },
 });
 
@@ -68,6 +70,48 @@ app.conversationUpdate("membersAdded", async (turnContext: TurnContext) => {
       await turnContext.sendActivity(MessageFactory.text(welcomeText));
     }
   }
+});
+
+app.feedbackLoop(async (_context, _state, feedbackLoopData) => {
+  if (feedbackLoopData.actionValue.reaction === 'like') {
+    console.log('👍' + ' ' + feedbackLoopData.actionValue.feedback!);
+  } else {
+    console.log('👎' + ' ' + feedbackLoopData.actionValue.feedback!);
+  }
+});
+
+app.ai.action<PredictedSayCommand>(AI.SayCommandActionName, async (context, state, data, action) => {
+  let activity;
+  if (data.response.context && data.response.context.citations.length > 0) {
+    const attachment = CardFactory.adaptiveCard(createResponseCard(data.response));
+    activity = MessageFactory.attachment(attachment);
+  }
+  else {
+    activity = MessageFactory.text(data.response.content);
+  }
+
+  activity.entities = [
+    {
+      type: "https://schema.org/Message",
+      "@type": "Message",
+      "@context": "https://schema.org",
+      "@id": "",
+      additionalType: ["AIGeneratedContent"],
+      usageInfo: {
+        "@type": "CreativeWork",
+        name: "Confidential",
+        description: "Sensitive information, do not share outside of your organization.",
+      }
+    }
+  ];
+  activity.channelData = {
+    feedbackLoopEnabled: true
+  };
+
+  await context.sendActivity(activity);
+
+  return "success";
+
 });
 
 export default app;
