@@ -30,22 +30,22 @@ const planner = new ActionPlanner({
     const dataSources = (template.config.completion as any)['data_sources'];
 
     dataSources.forEach((dataSource: any) => {
-      // if (dataSource.type === 'azure_search') {
-      //   dataSource.parameters.authentication.key = config.azureSearchKey;
-      //   dataSource.parameters.endpoint = config.azureSearchEndpoint;
-      //   dataSource.parameters.indexName = config.indexName;
-      //   dataSource.parameters.embedding_dependency.deployment_name =
-      //     config.azureOpenAIEmbeddingDeploymentName;
-      //   dataSource.parameters.role_information = `${skprompt.toString('utf-8')}`;
-      // }
-      //todo: remove hardcoded values
       if (dataSource.type === 'azure_search') {
-        dataSource.parameters.authentication.key = 'JfvOgX4HWyHzbTdGgfwBYZgivIGLFvDzsumIvKM0NsAzSeCw4GXS';
-        dataSource.parameters.endpoint = 'https://m365-ai-search-copilot.search.windows.net'
-        dataSource.parameters.indexName = 'resumes';
-        dataSource.parameters.embedding_dependency.deployment_name = 'text-embedding-ada-002';
+        dataSource.parameters.authentication.key = config.azureSearchKey;
+        dataSource.parameters.endpoint = config.azureSearchEndpoint;
+        dataSource.parameters.indexName = config.indexName;
+        dataSource.parameters.embedding_dependency.deployment_name =
+          config.azureOpenAIEmbeddingDeploymentName;
         dataSource.parameters.role_information = `${skprompt.toString('utf-8')}`;
       }
+      //todo: remove hardcoded values
+      // if (dataSource.type === 'azure_search') {
+      //   dataSource.parameters.authentication.key = 'nmrhRuMW952GoLwUJu7baujviRcQWbxdnpuTVn3Lb5AzSeD6KZaX';
+      //   dataSource.parameters.endpoint = 'https://m365-copilot-search.search.windows.net'
+      //   dataSource.parameters.indexName = 'resumes';
+      //   dataSource.parameters.embedding_dependency.deployment_name = 'text-embedding-ada-002';
+      //   dataSource.parameters.role_information = `${skprompt.toString('utf-8')}`;
+      // }
     });
 
     return template;
