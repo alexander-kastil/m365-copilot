@@ -5,22 +5,32 @@ import {
   ConfigurationBotFrameworkAuthentication,
   ConfigurationServiceClientCredentialFactory,
 } from "botbuilder";
+import { TeamsAdapter } from '@microsoft/teams-ai';
 
 // This bot's main dialog.
 import config from "./config";
 
-const botFrameworkAuthentication = new ConfigurationBotFrameworkAuthentication(
-  {},
-  new ConfigurationServiceClientCredentialFactory({
-    MicrosoftAppId: config.botId,
-    MicrosoftAppPassword: process.env.BOT_PASSWORD,
-    MicrosoftAppType: "MultiTenant",
-  })
-);
+// const botFrameworkAuthentication = new ConfigurationBotFrameworkAuthentication(
+//   {},
+//   new ConfigurationServiceClientCredentialFactory({
+//     MicrosoftAppId: config.botId,
+//     MicrosoftAppPassword: process.env.BOT_PASSWORD,
+//     MicrosoftAppType: "MultiTenant",
+//   })
+// );
 
 // Create adapter.
 // See https://aka.ms/about-bot-adapter to learn more about how bots work.
-const adapter = new CloudAdapter(botFrameworkAuthentication);
+// const adapter = new CloudAdapter(botFrameworkAuthentication);
+const adapter = new TeamsAdapter(
+  {},
+  new ConfigurationServiceClientCredentialFactory({
+    MicrosoftAppId: config.botId,
+    MicrosoftAppPassword: config.botPassword,
+    MicrosoftAppType: 'MultiTenant',
+  })
+);
+
 
 // Catch-all for errors.
 const onTurnErrorHandler = async (context, error) => {
