@@ -2,10 +2,12 @@ import { CardFactory, MemoryStorage, MessageFactory, TurnContext } from "botbuil
 import * as path from "path";
 import config from "../config";
 // See https://aka.ms/teams-ai-library to learn more about the Teams AI library.
-import { Application, ActionPlanner, OpenAIModel, PromptManager, AI, PredictedSayCommand, AuthError, TurnState } from "@microsoft/teams-ai";
+import { Application, ActionPlanner, OpenAIModel, PromptManager, AI, PredictedSayCommand, AuthError, TurnState, DefaultConversationState } from "@microsoft/teams-ai";
 import fs from 'fs';
 import { createResponseCard } from './card';
 import { Client } from "@microsoft/microsoft-graph-client";
+import { ensureListExists, getCandidates, setCandidates, deleteList } from "./actions";
+
 
 // Create AI components
 const model = new OpenAIModel({
@@ -25,25 +27,7 @@ const prompts = new PromptManager({
 const planner = new ActionPlanner({
   model,
   prompts,
-  defaultPrompt: async () => {
-    const template = await prompts.getPrompt('chat');
-    const skprompt = fs.readFileSync(path.join(__dirname, '..', 'prompts', 'chat', 'skprompt.txt'));
-
-    const dataSources = (template.config.completion as any)['data_sources'];
-
-    dataSources.forEach((dataSource: any) => {
-      if (dataSource.type === 'azure_search') {
-        dataSource.parameters.authentication.key = config.azureSearchKey;
-        dataSource.parameters.endpoint = config.azureSearchEndpoint;
-        dataSource.parameters.indexName = config.indexName;
-        dataSource.parameters.embedding_dependency.deployment_name =
-          config.azureOpenAIEmbeddingDeploymentName;
-        dataSource.parameters.role_information = `${skprompt.toString('utf-8')}`;
-      }
-    });
-
-    return template;
-  }
+  defaultPrompt: choosePrompt
 });
 
 // Define storage and application
@@ -74,11 +58,12 @@ const app = new Application({
   },
 });
 
-interface ConversationState {
-  count: number;
+interface ConversationState extends DefaultConversationState {
+  lists: Record<string, string[]>;
 }
 
-type ApplicationTurnState = TurnState<ConversationState>;
+export type ApplicationTurnState = TurnState<ConversationState>;
+
 app.authentication.get('graph').onUserSignInSuccess(async (context: TurnContext, state: ApplicationTurnState) => {
   const token = state.temp.authTokens['graph'];
   await context.sendActivity(`Hello ${await getUserDisplayName(token)}. You have successfully logged in to CareerGenie!`);
@@ -167,6 +152,75 @@ app.ai.action<PredictedSayCommand>(AI.SayCommandActionName, async (context, stat
 
   return "success";
 
+});
+
+async function choosePrompt(context) {
+  if (context.activity.text.includes('list')) {
+    const template = await prompts.getPrompt('monologue');
+    return template;
+  }
+  else {
+    const template = await prompts.getPrompt('chat');
+    const skprompt = fs.readFileSync(path.join(__dirname, '..', 'prompts', 'chat', 'skprompt.txt'));
+
+    const dataSources = (template.config.completion as any)['data_sources'];
+
+    dataSources.forEach((dataSource: any) => {
+      if (dataSource.type === 'azure_search') {
+        dataSource.parameters.authentication.key = config.azureSearchKey;
+        dataSource.parameters.endpoint = config.azureSearchEndpoint;
+        dataSource.parameters.indexName = config.indexName;
+        dataSource.parameters.embedding_dependency.deployment_name =
+          config.azureOpenAIEmbeddingDeploymentName;
+        dataSource.parameters.role_information = `${skprompt.toString('utf-8')}`;
+      }
+    });
+
+    return template;
+  }
+}
+
+// Register action handlers
+interface ListOnly {
+  list: string;
+}
+
+interface ListAndCandidates extends ListOnly {
+  Candidates?: string[];
+}
+
+app.ai.action('createList', async (context: TurnContext, state: ApplicationTurnState, parameters: ListAndCandidates) => {
+  ensureListExists(state, parameters.list);
+  if (Array.isArray(parameters.Candidates) && parameters.Candidates.length > 0) {
+    await app.ai.doAction(context, state, 'addCandidates', parameters);
+    return `List created and Candidates added. Summarize your action.`;
+  } else {
+    return `List created. Summarize your action.`;
+  }
+});
+
+app.ai.action('deleteList', async (context: TurnContext, state: ApplicationTurnState, parameters: ListOnly) => {
+  deleteList(state, parameters.list);
+  return `list deleted. Summarize your action.`;
+});
+
+app.ai.action('addCandidates', async (context: TurnContext, state: ApplicationTurnState, parameters: ListAndCandidates) => {
+  const Candidates = getCandidates(state, parameters.list);
+  Candidates.push(...(parameters.Candidates ?? []));
+  setCandidates(state, parameters.list, Candidates);
+  return `Candidates added. Summarize your action.`;
+});
+
+app.ai.action('removeCandidates', async (context: TurnContext, state: ApplicationTurnState, parameters: ListAndCandidates) => {
+  const Candidates = getCandidates(state, parameters.list);
+  (parameters.Candidates ?? []).forEach((candidate: string) => {
+    const index = Candidates.indexOf(candidate);
+    if (index >= 0) {
+      Candidates.splice(index, 1);
+    }
+  });
+  setCandidates(state, parameters.list, Candidates);
+  return `Candidates removed. Summarize your action.`;
 });
 
 export default app;
