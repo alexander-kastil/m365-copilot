@@ -23,6 +23,10 @@
                 {
                     "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
                     "type": "Scope"
+                },
+                {
+                    "id": "e383f46e-2787-4529-855e-0e479a3ffac0",
+                    "type": "Scope"
                 }
             ]
         }
@@ -94,7 +98,7 @@
     ],
     "replyUrlsWithType": [
         {
-            "url": "https://4z9x9h65-3978.euw.devtunnels.ms/auth-end.html",
+            "url": "https://5dnckl2r-3978.euw.devtunnels.ms/auth-end.html",
             "type": "Web"
         }
     ]

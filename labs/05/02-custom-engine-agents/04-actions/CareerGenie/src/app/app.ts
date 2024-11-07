@@ -6,7 +6,7 @@ import { Application, ActionPlanner, OpenAIModel, PromptManager, AI, PredictedSa
 import fs from 'fs';
 import { createResponseCard } from './card';
 import { Client } from "@microsoft/microsoft-graph-client";
-import { ensureListExists, getCandidates, setCandidates, deleteList } from "./actions";
+import { ensureListExists, getCandidates, setCandidates, deleteList, sendLists } from "./actions";
 
 
 // Create AI components
@@ -38,7 +38,7 @@ const app = new Application({
   authentication: {
     settings: {
       graph: {
-        scopes: ['User.Read'],
+        scopes: ['User.Read', 'Mail.Send'],
         msalConfig: {
           auth: {
             clientId: config.aadAppClientId!,
@@ -88,7 +88,7 @@ app.message('/signout', async (context: TurnContext, state: ApplicationTurnState
   await context.sendActivity(`You have signed out`);
 });
 
-async function getUserDisplayName(token: string): Promise<string | undefined> {
+export async function getUserDisplayName(token: string): Promise<string | undefined> {
   let displayName: string | undefined;
 
   const client = Client.init({
@@ -221,6 +221,11 @@ app.ai.action('removeCandidates', async (context: TurnContext, state: Applicatio
   });
   setCandidates(state, parameters.list, Candidates);
   return `Candidates removed. Summarize your action.`;
+});
+
+app.ai.action('sendLists', async (context: TurnContext, state: ApplicationTurnState, parameters: ListAndCandidates) => {
+  await sendLists(state, state.temp.authTokens['graph']);
+  return `Email sent to HR. Summarize your action.`;
 });
 
 export default app;
