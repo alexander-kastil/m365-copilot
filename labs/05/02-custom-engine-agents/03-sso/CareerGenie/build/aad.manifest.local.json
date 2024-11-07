@@ -1,0 +1,101 @@
+{
+    "id": "8369134d-feaf-4395-9e5c-fca4765c9cf6",
+    "appId": "dbc227e5-2217-4fbf-8f59-4fbe2f9520da",
+    "name": "CareerGenieBot-aad",
+    "accessTokenAcceptedVersion": 2,
+    "signInAudience": "AzureADMultipleOrgs",
+    "optionalClaims": {
+        "idToken": [],
+        "accessToken": [
+            {
+                "name": "idtyp",
+                "source": null,
+                "essential": false,
+                "additionalProperties": []
+            }
+        ],
+        "saml2Token": []
+    },
+    "requiredResourceAccess": [
+        {
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                    "type": "Scope"
+                }
+            ]
+        }
+    ],
+    "oauth2Permissions": [
+        {
+            "adminConsentDescription": "Allows Teams to call the app's web APIs as the current user.",
+            "adminConsentDisplayName": "Teams can access app's web APIs",
+            "id": "de2f272d-6b70-4b15-840b-2f1cc9fee0b9",
+            "isEnabled": true,
+            "type": "User",
+            "userConsentDescription": "Enable Teams to call this app's web APIs with the same rights that you have",
+            "userConsentDisplayName": "Teams can access app's web APIs and make requests on your behalf",
+            "value": "access_as_user"
+        }
+    ],
+    "preAuthorizedApplications": [
+        {
+            "appId": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+            "permissionIds": [
+                "de2f272d-6b70-4b15-840b-2f1cc9fee0b9"
+            ]
+        },
+        {
+            "appId": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346",
+            "permissionIds": [
+                "de2f272d-6b70-4b15-840b-2f1cc9fee0b9"
+            ]
+        },
+        {
+            "appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
+            "permissionIds": [
+                "de2f272d-6b70-4b15-840b-2f1cc9fee0b9"
+            ]
+        },
+        {
+            "appId": "00000002-0000-0ff1-ce00-000000000000",
+            "permissionIds": [
+                "de2f272d-6b70-4b15-840b-2f1cc9fee0b9"
+            ]
+        },
+        {
+            "appId": "bc59ab01-8403-45c6-8796-ac3ef710b3e3",
+            "permissionIds": [
+                "de2f272d-6b70-4b15-840b-2f1cc9fee0b9"
+            ]
+        },
+        {
+            "appId": "0ec893e0-5785-4de6-99da-4ed124e5296c",
+            "permissionIds": [
+                "de2f272d-6b70-4b15-840b-2f1cc9fee0b9"
+            ]
+        },
+        {
+            "appId": "4765445b-32c6-49b0-83e6-1d93765276ca",
+            "permissionIds": [
+                "de2f272d-6b70-4b15-840b-2f1cc9fee0b9"
+            ]
+        },
+        {
+            "appId": "4345a7b9-9a63-4910-a426-35363201d503",
+            "permissionIds": [
+                "de2f272d-6b70-4b15-840b-2f1cc9fee0b9"
+            ]
+        }
+    ],
+    "identifierUris": [
+        "api://botid-3da83c83-b293-4c28-9718-13798ce388b2"
+    ],
+    "replyUrlsWithType": [
+        {
+            "url": "https://b9mwgd53-3978.euw.devtunnels.ms/auth-end.html",
+            "type": "Web"
+        }
+    ]
+}
