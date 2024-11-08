@@ -1,14 +1,56 @@
-import {
-    TABLE_NAME, Product, ProductEx, Supplier, Category, OrderDetail
-} from './model';
-
+import { TABLE_NAME, Product, ProductEx, Supplier, Category, OrderDetail, Order, Customer } from './model';
 import { TableClient, TableEntityResult } from "@azure/data-tables";
 import config from "../config";
 import { getInventoryStatus } from '../adaptiveCards/utils';
 import DbService, { DbProject } from './dbService';
 
+
 // NOTE: We're force fitting a relational database into a non-relational database so please
 // forgive the inefficiencies. This is just for demonstration purposes.
+
+export async function searchProductsByCustomer(companyName: string): Promise<ProductEx[]> {
+
+    let result = await getAllProductsEx();
+
+    let customers = await loadReferenceData<Customer>(TABLE_NAME.CUSTOMER);
+    let customerId = "";
+    for (const c in customers) {
+        if (customers[c].CompanyName.toLowerCase().includes(companyName.toLowerCase())) {
+            customerId = customers[c].CustomerID;
+            break;
+        }
+    }
+
+    if (customerId === "")
+        return [];
+
+    let orders = await loadReferenceData<Order>(TABLE_NAME.ORDER);
+    let orderdetails = await loadReferenceData<OrderDetail>(TABLE_NAME.ORDER_DETAIL);
+    // build an array orders by customer id
+    let customerOrders = [];
+    for (const o in orders) {
+        if (customerId === orders[o].CustomerID) {
+            customerOrders.push(orders[o]);
+        }
+    }
+
+    let customerOrdersDetails = [];
+    // build an array order details customerOrders array
+    for (const od in orderdetails) {
+        for (const co in customerOrders) {
+            if (customerOrders[co].OrderID === orderdetails[od].OrderID) {
+                customerOrdersDetails.push(orderdetails[od]);
+            }
+        }
+    }
+
+    // Filter products by the ProductID in the customerOrdersDetails array
+    result = result.filter(product =>
+        customerOrdersDetails.some(order => order.ProductID === product.ProductID)
+    );
+
+    return result;
+}
 
 // #region searchProducts() and supporting functions
 
@@ -92,15 +134,15 @@ function isInRange(rangeExpression: string, value: number) {
 
     let result = false;     // Return false if the expression is malformed
 
-    if (rangeExpression.indexOf('-')< 0) {
+    if (rangeExpression.indexOf('-') < 0) {
         // If here, we have a single value or a malformed expression
         const val = Number(rangeExpression);
         if (!isNaN(val)) {
             result = value === val;
         }
-    } else if (rangeExpression.indexOf('-') === rangeExpression.length-1) {
+    } else if (rangeExpression.indexOf('-') === rangeExpression.length - 1) {
         // If here we have a single lower bound or a malformed expression
-        const lowerBound = Number(rangeExpression.slice(0,-1));
+        const lowerBound = Number(rangeExpression.slice(0, -1));
         if (!isNaN(lowerBound)) {
             result = value >= lowerBound;
         }
@@ -158,12 +200,12 @@ async function loadOrderTotals(): Promise<OrderTotals> {
         if (!totals[p]) {
             totals[p] = {
                 totalQuantity: Number(entity.Quantity),
-                totalRevenue: Number(entity.Quantity) * Number(entity.UnitPrice) * (1-Number(entity.Discount)),
-                totalDiscount: Number(entity.Quantity) * Number(entity.UnitPrice) * Number(entity.Discount) 
+                totalRevenue: Number(entity.Quantity) * Number(entity.UnitPrice) * (1 - Number(entity.Discount)),
+                totalDiscount: Number(entity.Quantity) * Number(entity.UnitPrice) * Number(entity.Discount)
             }
         } else {
             totals[p].totalQuantity += Number(entity.Quantity);
-            totals[p].totalRevenue += Number(entity.Quantity) * Number(entity.UnitPrice) * (1-Number(entity.Discount));
+            totals[p].totalRevenue += Number(entity.Quantity) * Number(entity.UnitPrice) * (1 - Number(entity.Discount));
             totals[p].totalDiscount += Number(entity.Quantity) * Number(entity.UnitPrice) * Number(entity.Discount);
         }
     }
@@ -199,11 +241,11 @@ async function getAllProductsEx(): Promise<ProductEx[]> {
     }
     return result;
 }
-export async function getCategories(): Promise<ReferenceData<Category>>{
-    return  await loadReferenceData<Category>(TABLE_NAME.CATEGORY);
+export async function getCategories(): Promise<ReferenceData<Category>> {
+    return await loadReferenceData<Category>(TABLE_NAME.CATEGORY);
 }
-export async function getSuppliers(): Promise<ReferenceData<Supplier>>{
-    return  await loadReferenceData<Supplier>(TABLE_NAME.SUPPLIER);
+export async function getSuppliers(): Promise<ReferenceData<Supplier>> {
+    return await loadReferenceData<Supplier>(TABLE_NAME.SUPPLIER);
 }
 
 async function getProductExForEntity(entity: TableEntityResult<Record<string, unknown>>): Promise<ProductEx> {
@@ -247,7 +289,7 @@ async function getProductExForEntity(entity: TableEntityResult<Record<string, un
 
 
     // 'in stock', 'low stock', 'on order', or 'out of stock'
-    result.InventoryStatus = getInventoryStatus(result);          
+    result.InventoryStatus = getInventoryStatus(result);
 
     return result;
 }
@@ -272,16 +314,16 @@ export async function updateProduct(updatedProduct: Product): Promise<void> {
 
 // #endregion
 
-export async function createProduct (product: Product): Promise<string> {
+export async function createProduct(product: Product): Promise<string> {
     // NOTE: Assignments are READ-WRITE so disable local caching
     const dbService = new DbService<DbProject>(false);
-    const nextId= await dbService.getNextId(TABLE_NAME.PRODUCT);
+    const nextId = await dbService.getNextId(TABLE_NAME.PRODUCT);
     const newProduct: DbProject = {
         etag: "",
         partitionKey: TABLE_NAME.PRODUCT,
         rowKey: nextId.toString(),
         timestamp: new Date(),
-        ProductID:nextId.toString(), 
+        ProductID: nextId.toString(),
         ProductName: product.ProductName,
         SupplierID: product.SupplierID,
         CategoryID: product.CategoryID,

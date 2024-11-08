@@ -8,6 +8,7 @@ import {
 } from "botbuilder";
 import productSearchCommand from "./messageExtensions/productSearchCommand";
 import discountedSearchCommand from "./messageExtensions/discountSearchCommand";
+import customerSearchCommand from "./messageExtensions/customerSearchCommand";
 import revenueSearchCommand from "./messageExtensions/revenueSearchCommand";
 import actionHandler from "./adaptiveCards/cardHandler";
 import { CreateActionErrorResponse } from "./adaptiveCards/utils";
@@ -30,6 +31,9 @@ export class SearchApp extends TeamsActivityHandler {
       }
       case discountedSearchCommand.COMMAND_ID: {
         return discountedSearchCommand.handleTeamsMessagingExtensionQuery(context, query);
+      }
+      case customerSearchCommand.COMMAND_ID: {
+        return customerSearchCommand.handleTeamsMessagingExtensionQuery(context, query);
       }
       case revenueSearchCommand.COMMAND_ID: {
         return revenueSearchCommand.handleTeamsMessagingExtensionQuery(context, query);
@@ -60,7 +64,7 @@ export class SearchApp extends TeamsActivityHandler {
         }
         case 'refresh': {
           return actionHandler.handleTeamsCardActionRefresh(context);
-        }          
+        }
         default:
           return CreateActionErrorResponse(400, 0, `ActionVerbNotSupported: ${context.activity.value.action.verb} is not a supported action verb.`);
 
@@ -100,7 +104,7 @@ export class SearchApp extends TeamsActivityHandler {
         }
         case addSupplierCommand.COMMAND_ID: {
           return await addSupplierCommand.handleTeamsMessagingExtensionSubmitAction(context, context.activity.value);
-        } 
+        }
         default:
           return null;
       }
@@ -111,8 +115,8 @@ export class SearchApp extends TeamsActivityHandler {
     }
   }
 
-  
-  
+
+
 
 }
 

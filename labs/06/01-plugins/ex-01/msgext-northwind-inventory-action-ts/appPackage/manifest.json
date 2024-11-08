@@ -96,6 +96,24 @@
                     ]
                 },
                 {
+                    "id": "companySearch",
+                    "context": [
+                        "compose",
+                        "commandBox"
+                    ],
+                    "description": "Given a company name, search for products ordered by that company",
+                    "title": "Customer",
+                    "type": "query",
+                    "parameters": [
+                        {
+                            "name": "companyName",
+                            "title": "Company name",
+                            "description": "The company name to find products ordered by that company",
+                            "inputType": "text"
+                        }
+                    ]
+                },
+                {
                     "id": "revenueSearch",
                     "context": [
                         "compose",
