@@ -114,10 +114,4 @@ export class SearchApp extends TeamsActivityHandler {
       console.log(e);
     }
   }
-
-
-
-
 }
-
-
