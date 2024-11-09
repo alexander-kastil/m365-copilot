@@ -23,4 +23,3 @@
 
 [Learning Path - Prepare your organization for Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/paths/prepare-your-organization-microsoft-365-copilot/)
 
-[Introduction to Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/modules/introduction-microsoft-365-copilot/)
