@@ -29,6 +29,24 @@ provision:
       manifestPath: "./infra/entra/entra.bot.manifest.json"
       outputFilePath : "./infra/entra/build/entra.bot.manifest.${{TEAMSFX_ENV}}.json"
 
+  - uses: aadApp/create
+    with:
+        name: ${{APP_INTERNAL_NAME}}-products-api-${{TEAMSFX_ENV}}
+        generateClientSecret: true
+        signInAudience: AzureADMultipleOrgs
+    writeToEnvironmentFile:
+        clientId: PRODUCTS_API_ENTRA_APP_ID
+        clientSecret: SECRET_PRODUCTS_API_ENTRA_APP_CLIENT_SECRET
+        objectId: PRODUCTS_API_ENTRA_APP_OBJECT_ID
+        tenantId: PRODUCTS_API_ENTRA_APP_TENANT_ID
+        authority: PRODUCTS_API_ENTRA_APP_OAUTH_AUTHORITY
+        authorityHost: PRODUCTS_API_ENTRA_APP_OAUTH_AUTHORITY_HOST
+
+  - uses: aadApp/update
+    with:
+        manifestPath: "./infra/entra/entra.products.api.manifest.json"
+        outputFilePath : "./infra/entra/build/entra.products.api.${{TEAMSFX_ENV}}.json"
+
   - uses: arm/deploy
     with:
       subscriptionId: ${{AZURE_SUBSCRIPTION_ID}}
@@ -44,7 +62,8 @@ provision:
       target: ../ProductsPlugin/appsettings.Development.json
       content:
         BOT_ID: ${{BOT_ID}}
-        BOT_PASSWORD: ${{SECRET_BOT_PASSWORD}}
+        BOT_PASSWORD: ${{CONNECTION_NAME}}
+        CONNECTION_NAME: ${{CONNECTION_NAME}}
 
   - uses: teamsApp/validateManifest
     with:

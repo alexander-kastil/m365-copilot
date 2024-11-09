@@ -11,6 +11,12 @@ param botServiceSku string = 'F0'
 param botEntraAppClientId string
 param botAppDomain string
 
+param backendApiEntraAppClientId string
+param productsApiEntraAppClientId string
+@secure()
+param productsApiEntraAppClientSecret string
+param connectionName string
+
 // Register your web service as a bot with the Bot Framework
 resource botService 'Microsoft.BotService/botServices@2021-03-01' = {
   kind: 'azurebot'
@@ -43,5 +49,28 @@ resource botServiceM365ExtensionsChannel 'Microsoft.BotService/botServices/chann
   name: 'M365Extensions'
   properties: {
     channelName: 'M365Extensions'
+  }
+}
+
+resource botServicesProductsApiConnection 'Microsoft.BotService/botServices/connections@2022-09-15' = {
+  parent: botService
+  name: connectionName
+  location: 'global'
+  properties: {
+    serviceProviderDisplayName: 'Azure Active Directory v2'
+    serviceProviderId: '30dd229c-58e3-4a48-bdfd-91ec48eb906c'
+    clientId: productsApiEntraAppClientId
+    clientSecret: productsApiEntraAppClientSecret
+    scopes: 'api://${backendApiEntraAppClientId}/Product.Read'
+    parameters: [
+      {
+        key: 'tenantID'
+        value: 'common'
+      }
+      {
+        key: 'tokenExchangeUrl'
+        value: 'api://${botAppDomain}/botid-${botEntraAppClientId}'
+      }
+    ]
   }
 }

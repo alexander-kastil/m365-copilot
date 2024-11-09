@@ -13,6 +13,18 @@
     },
     "botAppDomain": {
       "value": "${{BOT_DOMAIN}}"
+    },
+    "backendApiEntraAppClientId": {
+      "value": "${{BACKEND_API_ENTRA_APP_ID}}"
+    },
+    "productsApiEntraAppClientId": {
+      "value": "${{BACKEND_API_ENTRA_APP_ID}}"
+    },
+    "productsApiEntraAppClientSecret": {
+      "value": "${{SECRET_PRODUCTS_API_ENTRA_APP_CLIENT_SECRET}}"
+    },
+    "connectionName": {
+      "value": "${{CONNECTION_NAME}}"
     }
   }
 }

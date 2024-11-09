@@ -59,6 +59,7 @@
     "resource": "api://${{BOT_DOMAIN}}/botid-${{BOT_ID}}"
   },
   "validDomains": [
+    "token.botframework.com",
     "${{BOT_DOMAIN}}"
   ]
 }
