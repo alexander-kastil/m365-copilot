@@ -85,6 +85,7 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - Bot Framework and Message Interactions
 - Message Extensions & Adaptive Cards capabilities
 - Implementing Custom Engine Agents for Microsoft 365
+- Sharepoint Agents
 
 ### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
 
