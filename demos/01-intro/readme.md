@@ -1,10 +1,11 @@
 # Introduction to Developing AI Agents and Copilots for Microsoft 365
 
 - Overview of the Microsoft 365 platform & Copilot for Microsoft 365
-- Generative AI & Large Language Models (LLMs)
-- What is a Semantic Index
-- Microsoft Copilot extensibility fundamentals
-- Choose a Copilot extensibility development path
+- Generative AI & Large Language Models (LLMs) & Semantic Index
+- Teams AI Library & Microsoft 365 Agents SDK
+- Prompt Engineering, Prompty & Copilot Pages
+- Microsoft Copilot Extensibility Fundamentals
+- Choose a Copilot Extensibility Development path
 - Development Tools & Environment Setup
 
 ## Links & Resources

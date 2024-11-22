@@ -1,9 +1,3 @@
-# Craft effective prompts for Microsoft Copilot for Microsoft 365
+# Extend Microsoft Copilot for Microsoft 365 with Copilot Studio
 
-[Craft effective prompts for Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/paths/craft-effective-prompts-copilot-microsoft-365/)
-
-[Explore the possibilities with Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/modules/explore-possibilities-microsoft-365-copilot/)
-
-[Create and draft with Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/modules/create-draft-content-with-microsoft-copilot-microsoft-365/)
-
-[Ask questions and analyze content with Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/training/modules/ask-analyze-content-with-microsoft-copilot-microsoft-365/)
+[Create and extend custom copilots in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/extend-microsoft-copilot-microsoft-365-copilot-studio/)
