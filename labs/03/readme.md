@@ -1,3 +1,5 @@
-# Extend Microsoft Copilot for Microsoft 365 with Copilot Studio
+# Teams & Azure Essentials for Copilot Developers
 
-[Create and extend custom copilots in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/extend-microsoft-copilot-microsoft-365-copilot-studio/)
+- Message Extensions
+- Adaptive Cards
+- Conversational Bots (optional)

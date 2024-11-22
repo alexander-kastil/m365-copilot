@@ -1,26 +1,32 @@
 # Developing Agents and Copilots for Microsoft 365
 
-This workshop is designed to provide a hands-on experience for developers to learn how to develop Plugins and Connectors for Copilot for Microsoft 365 as well as Agents using the Teams AI Library. It also prepares for the following Applied Skills:
+This advanced workshop is meticulously crafted to deliver an in-depth exploration and comparison of implementing both Low-Code and Pro-Code Agents for Microsoft 365. Participants will learn how to automate repetitive tasks within their Microsoft 365 environment and aggregate essential data seamlessly with simple prompts by implementing Agents using Copilot Studio and Teams Toolkit. The course also delves into the intricacies of extending Microsoft 365 Copilot through Plugins (Skills) and Connectors (Data Integration), offering a comprehensive overview of the full customization capabilities within the Microsoft 365 Copilot and Agents ecosystem.
 
+It prepares for the following Applied Skills:
+
+- PL-7008: Create and extend custom copilots in Microsoft Copilot Studio
 - MS-4010: Build plugins and connectors for Copilot for Microsoft 365
+- MS-4015: Build custom engine copilots for Microsoft Teams
 
-Introduction to Developing Agents and Copilots for Microsoft 365:
-This module provides an overview of the Microsoft 365 platform and the Copilot for Microsoft 365 ecosystem. It introduces basic concepts like Generative AI, Large Language Models (LLMs) and Semantic Index. Finally, it covers the Fundamentals of Microsoft Copilot Extensibility and guides you in choosing a development path. 
+Introduction to Developing Agents and Copilots for Microsoft 365
 
-Craft effective prompts for Microsoft Copilot for Microsoft 365:
-In this module, you’ll explore various prompting techniques to effectively interact with Microsoft Copilot for Microsoft 365. You’ll learn how to summarize, create, draft, edit, and transform content using Copilot. Additionally, the module covers how to ask questions and analyze content with Copilot for Microsoft 365. You’ll also learn how to use Copilot for Microsoft 365 in Office Apps.
+Kick off your journey by gaining a comprehensive overview of the Microsoft 365 platform and its Copilot functionalities. Delve into Generative AI, Large Language Models (LLMs), and Semantic Index, and explore essential tools like Teams AI Library and Microsoft 365 Agents SDK. Learn the fundamentals of prompt engineering, Copilot Pages, and Copilot Extensibility, and choose your Copilot development path. Set up your development environment with all the necessary tools to get started.
 
-Extend Microsoft Copilot for Microsoft 365 with Copilot Studio:
-This module delves into the fundamentals of Microsoft Copilot extensibility and introduces Copilot Studio Actions. You’ll learn to create Low Code Prompts, Connectors, and Conversational Actions for Microsoft Copilot for Microsoft 365 within Copilot Studio. 
+Extend Microsoft Copilot for Microsoft 365 with Copilot Studio
 
-Teams & Azure Essentials for Copilot Developers:
-Here, you’ll learn about Teams extension patterns and the Developer Portal, along with the integration of Teams and Copilot for Microsoft 365. The module covers the Teams Developer Toolkit, Dev Tunnels, Deploying Azure Resources and App Registrations using Bicep and an introduction to the Bot Framework SDK. It aims to equip you with essential skills for developing AI Solutions within the Teams environment.
+Master the fundamentals of Microsoft Copilot extensibility through Copilot Studio. Learn to create effective prompts-, connector-, and conversational actions for Microsoft Copilot, and implement agents effectively. Understand topics, entities, and variables, and how to integrate data and add actions. Customize SharePoint One-Click Agents and work on a guided project to create your copilots using Copilot Studio.
 
-Build Plugins and Connectors for Microsoft Copilot for Microsoft 365:
-This module introduces the Pro Code Copilot for Microsoft 365 Extension Architecture, explains the differences between Microsoft Graph Connectors and Plugins. It demonstrates Bot Framework based Message Extension Plugins and the simpler Api based Plugins. It demonstrates how to implement Graph Connectors that can be used in Microsoft 365 Copilot as well Outlook using Context IQ. 
+Teams & Azure Essentials for Copilot Developers
 
-Implement Agents for Microsoft 365 using Teams AI Library:
-In this module, you’ll be introduced to the concepts of Declarative- vs Custom Engine Agents. It introduces the skills to implement Custom Engine Agents for Microsoft 365 by leveraging the Teams AI Library, a Large Language Model of choice, Bot Framework, Message Interactions and Adaptive Cards capabilities.
+Get acquainted with Teams administration and development portals, along with Teams Toolkit and its CLI. Learn to deploy Azure resources using Bicep, and manage app registrations with Single Sign-On (SSO). Gain an introduction to conversational bots, setting a strong foundation for developing advanced capabilities within the Teams environment.
+
+Implement Agents for Microsoft 365 using Teams AI Library
+
+Discover the Teams AI library and the role of Large Language Models (LLMs) in developing agents. Learn the difference between declarative and custom engine agents, and how to implement both for Microsoft 365 Copilot. Extend agents with API plugins, enhance user experience with Adaptive Cards, and configure SSO and Graph-based actions for a seamless integration.
+
+Build Plugins and Connectors for Microsoft Copilot for Microsoft 365 using Teams Toolkit
+
+Explore the architecture of Copilot for Microsoft 365 extensions and understand the distinction between Microsoft Graph Connectors and Plugins. Learn to integrate enterprise data using Microsoft Graph Connectors and manage authentication and Graph access. Add skills using plugins, differentiate between message extensions and API-based plugins, and work on a guided project to build a message extension plugin with TypeScript for Microsoft Copilot.
 
 Duration: 5 days
 
@@ -44,22 +50,12 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 ### Introduction to Developing Agents and Copilots for Microsoft 365
 
 - Overview of the Microsoft 365 platform & Copilot for Microsoft 365
-- Generative AI & Large Language Models (LLMs)
-- Microsoft Copilot extensibility fundamentals
-- Choose a Copilot extensibility development path
-- What is a Semantic Index
+- Generative AI & Large Language Models (LLMs) & Semantic Index
+- Teams AI Library & Microsoft 365 Agents SDK
+- Prompt Engineering, Prompty & Copilot Pages
+- Microsoft Copilot Extensibility Fundamentals
+- Choose a Copilot Extensibility Development path
 - Development Tools & Environment Setup
-- Sharepoint Agents and OOB Agents
-- Copilot Pages
-
-### Craft effective prompts for Microsoft Copilot for Microsoft 365
-
-- Using Copilot for Microsoft 365 in Office Apps 
-- Introduction to prompting Techniques
-- Summarize with Microsoft Copilot for Microsoft 365
-- Create and draft with Microsoft Copilot for Microsoft 365
-- Edit and transform content with Microsoft Copilot for Microsoft 365
-- Ask questions and analyze content with Microsoft Copilot for Microsoft 365
 
 ### Extend Microsoft Copilot for Microsoft 365 with Copilot Studio
 
@@ -68,6 +64,11 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - Create prompt actions for Microsoft Copilot for Microsoft 365 in Copilot Studio
 - Create connector actions for Microsoft Copilot for Microsoft 365 in Copilot Studio
 - Create conversational actions for Microsoft Copilot for Microsoft 365 in Copilot Studio
+- Implementing Agents in Copilot Studio
+- Topics, Entities and Variables
+- Adding Actions & Integrating Data
+- Customizing SharePoint One-Click Agents using Copilot Studio
+- Guided Project - Create copilots with Microsoft Copilot Studio
 
 ### Teams & Azure Essentials for Copilot Developers
 
@@ -76,24 +77,25 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - Dev Tunnel & Dev Tunnel CLI
 - Deploy Azure Resources with Bicep
 - App Registrations & Single Sign-On (SSO)
-- Introduction to Bot Framework SDK
+- Introduction to Conversational Bots
 
 ### Implement Agents for Microsoft 365 using Teams AI Library
 
+- Introduction to Teams AI library & Large Language Models (LLM)
 - Declarative Agents vs Custom Engine Agents
 - Implementing Declarative Agents for Microsoft 365 Copilot
-- Introduction to Teams AI library
-- Teams AI Library & Large Language Models (LLM)
-- Bot Framework and Message Interactions
-- Message Extensions & Adaptive Cards capabilities
+- Extend declarative agents with API plugins
 - Implementing Custom Engine Agents for Microsoft 365
+- Enhance your agent using custom data and Azure AI Search (RAG)
+- Enhance the user experience using Adaptive Cards
+- Configure Single Sign-On & Graph based Actions
 
-### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365
+### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365 using Teams Toolkit
 
-- Microsoft Graph Connectors vs Plugins
-- Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio
 - Copilot for Microsoft 365 Extension Architecture
-- Microsoft Graph Connectors for Copilot for Microsoft 365
-- Message Extensions for Microsoft Copilot for Microsoft 365
-- Build Plugins using Microsoft Business Applications
+- Microsoft Graph Connectors vs Plugins
+- Integrate Enterprise data using Microsoft Graph Connectors for Copilot for Microsoft 365
+- Authentication & Microsoft Graph Access
+- Adding Skills using Plugins
+- Message Extensions- vs Api based Plugins
 - Guided Project - Build a message extension plugin with TypeScript (TS) for Microsoft Copilot

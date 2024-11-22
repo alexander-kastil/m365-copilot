@@ -1,5 +1,4 @@
-# Teams & Azure Essentials for Copilot Developers
+# Implement Agents for Microsoft 365 using Teams AI Library
 
-- Message Extensions
-- Adaptive Cards
-- Conversational Bots (optional)
+- Implement Declarative Agents with Api Plugins
+- Implement Custom Engine Agents
