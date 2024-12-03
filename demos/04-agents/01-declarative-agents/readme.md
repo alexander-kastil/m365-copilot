@@ -1,1 +1,3 @@
+# Declarative Agents
+
 [Extend declarative agents for Microsoft 365 Copilot with API plugins using Visual Studio Code](https://learn.microsoft.com/en-us/training/paths/copilot-microsoft-365-declarative-agents-api-plugins-visual-studio-code/)
