@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: API to retrieve dishes and place orders for Il Ristorante.
 servers:
-  - url: http://localhost:7071/api
+  - url: ${{OPENAPI_SERVER_URL}}/api
     description: Il Ristorante API server
 paths:
   /dishes:
