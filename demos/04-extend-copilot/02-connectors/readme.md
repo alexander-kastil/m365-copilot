@@ -1,5 +1,7 @@
 # Microsoft Graph Connectors
 
+Microsoft Graph Connectors are a set of APIs that enable you to connect your data source to Microsoft 365. You can use Microsoft Graph Connectors to index data from your data source and make it available in Microsoft Search, Copilot in Teams, the Microsoft 365 App, and more.
+
 ## Links & Resources
 
 [Microsoft Graph Connectors for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-graph-connector)
