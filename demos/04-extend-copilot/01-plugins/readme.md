@@ -1,10 +1,18 @@
 # Add Skills using Plugins for Copilot for Microsoft 365
 
-[API Plugins](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-api-plugins)
+Plugins expand Copilot's skills to accomplish tasks on behalf of your users. They're especially good at:
 
-[Teams Message Extension Plugins](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-message-extension-bot)
+- Accessing real-time information
+- Retrieving relational data
+- Performing actions across apps
+
+Message extensions are a powerful feature in Microsoft Teams, and in Outlook, designed to facilitate user engagement with your web service. These interactions are typically triggered via buttons and forms within Microsoft Teams and Outlook clients. 
 
 ## Links & Resources
+
+[Message extensions for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-message-extension-bot)
+
+## Samples
 
 | Sample | Description |
 |--------|-------------|
