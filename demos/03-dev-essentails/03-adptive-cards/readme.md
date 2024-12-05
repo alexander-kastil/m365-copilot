@@ -5,3 +5,7 @@
 ## Links & Resources
 
 [Adaptive Cards Documentation](https://learn.microsoft.com/en-us/adaptive-cards/)
+
+## Tools & Extensions
+
+[Adaptive Card Previewer](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.vscode-adaptive-cards)

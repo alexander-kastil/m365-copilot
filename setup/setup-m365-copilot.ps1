@@ -50,15 +50,16 @@ code --install-extension ms-dotnettools.csharp
 code --install-extension ms-vscode.powershell
 code --install-extension ms-vscode.azurecli
 code --install-extension ms-vscode.azure-account
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-azuretools.vscode-azurefunctions
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension redhat.vscode-yaml
-code --install-extension bencoleman.armview
 code --install-extension mdickin.markdown-shortcuts
 code --install-extension alex-pattison.theme-cobalt3
 code --install-extension aliasadidev.nugetpackagemanagergui
 code --install-extension humao.rest-client
+code --install-extension TeamsDevApp.vscode-adaptive-cards
+code --install-extension TeamsDevApp.ms-teams-vscode-extension
+code --install-extension ms-azuretools.vscode-azurefunctions
+code --install-extension ms-azuretools.vscode-bicep	
 
 # Azurite Storage Emulator & Function Core Tools v4
 npm install -g azure-functions-core-tools@4 --unsafe-perm true --force
