@@ -20,13 +20,13 @@ Teams & Azure Essentials for Copilot Developers
 
 Get acquainted with Teams administration and development portals, along with Teams Toolkit and its CLI. Learn to deploy Azure resources using Bicep, and manage app registrations with Single Sign-On (SSO). Gain an introduction to conversational bots, setting a strong foundation for developing advanced capabilities within the Teams environment.
 
-Implement Agents for Microsoft 365 using Teams AI Library
-
-Discover the Teams AI library and the role of Large Language Models (LLMs) in developing agents. Learn the difference between declarative and custom engine agents, and how to implement both for Microsoft 365 Copilot. Extend agents with API plugins, enhance user experience with Adaptive Cards, and configure SSO and Graph-based actions for a seamless integration.
-
 Build Plugins and Connectors for Microsoft Copilot for Microsoft 365 using Teams Toolkit
 
 Explore the architecture of Copilot for Microsoft 365 extensions and understand the distinction between Microsoft Graph Connectors and Plugins. Learn to integrate enterprise data using Microsoft Graph Connectors and manage authentication and Graph access. Add skills using plugins, differentiate between message extensions and API-based plugins, and work on a guided project to build a message extension plugin with TypeScript for Microsoft Copilot.
+
+Implement Agents for Microsoft 365 using Teams AI Library
+
+Discover the Teams AI library and the role of Large Language Models (LLMs) in developing agents. Learn the difference between declarative and custom engine agents, and how to implement both for Microsoft 365 Copilot. Extend agents with API plugins, enhance user experience with Adaptive Cards, and configure SSO and Graph-based actions for a seamless integration.
 
 Duration: 5 days
 
@@ -79,6 +79,16 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - App Registrations & Single Sign-On (SSO)
 - Introduction to Conversational Bots
 
+### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365 using Teams Toolkit
+
+- Copilot for Microsoft 365 Extension Architecture
+- Microsoft Graph Connectors vs Plugins
+- Integrate Enterprise data using Microsoft Graph Connectors for Copilot for Microsoft 365
+- Authentication & Microsoft Graph Access
+- Adding Skills using Plugins
+- Message Extensions- vs Api based Plugins
+- Guided Project - Build a message extension plugin with TypeScript (TS) for Microsoft Copilot
+
 ### Implement Agents for Microsoft 365 using Teams AI Library
 
 - Introduction to Teams AI library & Large Language Models (LLM)
@@ -89,13 +99,3 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - Enhance your agent using custom data and Azure AI Search (RAG)
 - Enhance the user experience using Adaptive Cards
 - Configure Single Sign-On & Graph based Actions
-
-### Build Plugins and Connectors for Microsoft Copilot for Microsoft 365 using Teams Toolkit
-
-- Copilot for Microsoft 365 Extension Architecture
-- Microsoft Graph Connectors vs Plugins
-- Integrate Enterprise data using Microsoft Graph Connectors for Copilot for Microsoft 365
-- Authentication & Microsoft Graph Access
-- Adding Skills using Plugins
-- Message Extensions- vs Api based Plugins
-- Guided Project - Build a message extension plugin with TypeScript (TS) for Microsoft Copilot
