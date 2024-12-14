@@ -48,13 +48,14 @@ When creating a class description, use the following outline:
 
 {Short overall description of the class. 4-5 sentences}
 
-Modules
-
-{List of modules. Each module should have a title and a list topics that you extract from the powerpoint presentations}
 
 {Module Name}
 
 {Short description of the module. 2-3 sentences}
+
+Modules
+
+{List of modules. Each module should have a title and a list topics that you extract from the powerpoint presentations}
 ```
 
 ## Usage
