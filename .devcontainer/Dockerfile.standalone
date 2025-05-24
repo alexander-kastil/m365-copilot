@@ -1,0 +1,84 @@
+# M365 Copilot Development Container
+# This image provides a complete development environment for Microsoft 365 and Copilot development
+FROM mcr.microsoft.com/devcontainers/dotnet:9.0
+
+LABEL org.opencontainers.image.title="M365 Copilot Development Container"
+LABEL org.opencontainers.image.description="Complete development environment for Microsoft 365 and Copilot development with .NET 9, Node.js 22, Azure CLI, and Teams development tools"
+LABEL org.opencontainers.image.vendor="M365 Copilot Workshop"
+LABEL org.opencontainers.image.licenses="CC-BY-NC-SA-4.0"
+LABEL org.opencontainers.image.source="https://github.com/your-username/m365-copilot"
+
+# Set environment variables
+ENV NODE_VERSION=22.11.0
+ENV TZ=UTC
+ENV NODE_ENV=development
+
+# Install Node.js and global npm packages
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
+    && apt-get update \
+    && apt-get install -y nodejs \
+    && npm install -g npm@latest \
+    && npm install -g azurite \
+    && npm install -g @microsoft/teamsapp-cli \
+    && node --version \
+    && npm --version
+
+# Install SQLite and development tools
+RUN apt-get update \
+    && apt-get install -y \
+        sqlite3 \
+        curl \
+        wget \
+        unzip \
+        git \
+        jq \
+        tree \
+        vim \
+        nano \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Azure Functions Core Tools
+RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg \
+    && mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg \
+    && sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/debian/$(lsb_release -rs | cut -d'.' -f 1)/prod $(lsb_release -cs) main" > /etc/apt/sources.list.d/dotnetdev.list' \
+    && apt-get update \
+    && apt-get install -y azure-functions-core-tools-4 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Azure CLI
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+
+# Install GitHub CLI
+RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
+    && chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
+    && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+    && apt-get update \
+    && apt-get install -y gh \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install additional tools for M365 development
+RUN dotnet tool install --global Microsoft.OpenApi.Kiota
+
+# Set timezone
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Create workspace directory and set permissions
+RUN mkdir -p /workspace && chmod -R 777 /workspace
+WORKDIR /workspace
+
+# Copy initialization script
+COPY .devcontainer/init-container.sh /usr/local/bin/init-container.sh
+RUN chmod +x /usr/local/bin/init-container.sh
+
+# Expose common development ports
+EXPOSE 3000 4200 5000 5001 8080
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+    CMD node --version && dotnet --version && az --version || exit 1
+
+# Default command
+CMD ["/bin/bash"]

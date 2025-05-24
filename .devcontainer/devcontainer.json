@@ -1,7 +1,9 @@
 {
-  "name": "Agents Development Container",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "devcontainer",
+  "name": "M365 Copilot Dev (Default)",
+  "build": {
+    "dockerfile": "Dockerfile.standalone",
+    "context": ".."
+  },
   "workspaceFolder": "/workspace",
   "customizations": {
     "vscode": {
@@ -101,30 +103,47 @@
       }
     }
   },
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "22.11.0"
-    },
-    "ghcr.io/devcontainers/features/dotnet:1": {
-      "version": "9.0"
-    },
-    "ghcr.io/devcontainers/features/git:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/azure-cli:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.11"
-    },
-    "ghcr.io/devcontainers/features/powershell:1": {
-      "version": "latest"
-    }
-  },
   "forwardPorts": [
+    3000,
     4200,
     5000,
-    5001
+    5001,
+    8080
   ],
-  "postCreateCommand": "bash ./.devcontainer/post-create.sh"
+  "portsAttributes": {
+    "3000": {
+      "label": "Frontend Dev Server",
+      "onAutoForward": "openPreview"
+    },
+    "4200": {
+      "label": "Angular Dev Server",
+      "onAutoForward": "openPreview"
+    },
+    "5000": {
+      "label": ".NET API (HTTP)",
+      "onAutoForward": "openPreview"
+    },
+    "5001": {
+      "label": ".NET API (HTTPS)",
+      "onAutoForward": "openPreview"
+    },
+    "8080": {
+      "label": "General Web Server",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "containerEnv": {
+    "NODE_ENV": "development",
+    "TZ": "UTC",
+    "DOTNET_CLI_TELEMETRY_OPTOUT": "1",
+    "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1"
+  },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/root/.dotnet/tools"
+  },
+  "initializeCommand": "echo 'Starting M365 Copilot Development Environment (Default)...'",
+  "postCreateCommand": "/usr/local/bin/init-container.sh",
+  "postStartCommand": {
+    "info": "echo '🚀 M365 Copilot Development Environment Ready! 🎉'"
+  }
 }

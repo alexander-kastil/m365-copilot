@@ -1,0 +1,182 @@
+{
+  "name": "M365 Copilot Dev (Builder)",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // .NET extensions
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-dotnettools.vscodeintellicode-csharp",
+        "adrianwilczynski.asp-net-core-snippet-pack",
+        // SQL extensions for EF Core/SQLite support
+        "qwtel.sqlite-viewer",
+        // General development extensions
+        "mdickin.markdown-shortcuts",
+        "esbenp.prettier-vscode",
+        "github.copilot",
+        "github.copilot-chat",
+        "eamodio.gitlens",
+        "streetsidesoftware.code-spell-checker",
+        "humao.rest-client",
+        "ms-vscode.powershell",
+        // Azure extensions
+        "ms-vscode.azurecli",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-azuretools.vscode-bicep",
+        // GitHub extensions
+        "GitHub.vscode-pull-request-github",
+        // YAML and configuration
+        "redhat.vscode-yaml",
+        // Theme
+        "alex-pattison.theme-cobalt3",
+        // Package management
+        "aliasadidev.nugetpackagemanagergui",
+        // Teams and M365 extensions
+        "teamsdevapp.vscode-adaptive-cards",
+        "teamsdevapp.ms-teams-vscode-extension",
+        "ms-copilotstudio.vscode-copilotstudio",
+        "teamsdevapp.vscode-ai-foundry",
+        "ms-graph.kiota",
+        "mermaidchart.vscode-mermaid-chart",
+        "ms-semantic-kernel.semantic-kernel"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": "explicit"
+        },
+        "typescript.preferences.quoteStyle": "single",
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "javascript.updateImportsOnFileMove.enabled": "always",
+        "typescript.preferences.importModuleSpecifier": "relative",
+        "csharp.format.enable": true,
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[csharp]": {
+          "editor.defaultFormatter": "ms-dotnettools.csharp"
+        },
+        // GitHub Copilot Settings
+        "chat.agent.enabled": true,
+        "chat.mcp.discovery.enabled": true,
+        "chat.detectParticipant.enabled": true,
+        "terminal.integrated.suggest.enabled": true,
+        "github.copilot.chat.codeGeneration.instructions": [
+          {
+            "text": "In TypeScript never underscore for private field names instead use camelCase."
+          },
+          {
+            "text": "Always use 'const' for variables that are not reassigned."
+          }
+        ],
+        "github.copilot.enable": {
+          "*": true,
+          "markdown": true,
+          "plaintext": false,
+          "scminput": false,
+          "yaml": true
+        }
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22.11.0",
+      "nodeGypDependencies": true,
+      "nvmInstall": true
+    },
+    "ghcr.io/devcontainers/features/dotnet:1": {
+      "version": "9.0",
+      "aspNetCoreRuntimeVersions": "9.0"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest",
+      "ppa": true
+    },
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest",
+      "installBicep": true,
+      "extensions": "azure-devops"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11",
+      "installTools": true,
+      "optimize": true
+    },
+    "ghcr.io/devcontainers/features/powershell:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+      "version": "latest",
+      "helm": "latest",
+      "minikube": "none"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "dockerDashComposeVersion": "v2"
+    },
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "installOhMyZsh": true,
+      "upgradePackages": true,
+      "username": "vscode",
+      "uid": "1000",
+      "gid": "1000"
+    },
+    "ghcr.io/devcontainers-contrib/features/npm-package:1": {
+      "package": "azurite,@microsoft/teamsapp-cli,azure-functions-core-tools@4"
+    }
+  },
+  "forwardPorts": [3000, 4200, 5000, 5001, 8080],
+  "portsAttributes": {
+    "3000": {
+      "label": "Frontend Dev Server",
+      "onAutoForward": "openPreview"
+    },
+    "4200": {
+      "label": "Angular Dev Server",
+      "onAutoForward": "openPreview"
+    },
+    "5000": {
+      "label": ".NET API (HTTP)",
+      "onAutoForward": "openPreview"
+    },
+    "5001": {
+      "label": ".NET API (HTTPS)",
+      "onAutoForward": "openPreview"
+    },
+    "8080": {
+      "label": "General Web Server",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "containerEnv": {
+    "NODE_ENV": "development",
+    "TZ": "UTC",
+    "DOTNET_CLI_TELEMETRY_OPTOUT": "1",
+    "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1"
+  },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/vscode/.dotnet/tools"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ],
+  "initializeCommand": "echo 'Starting M365 Copilot Development Environment (Builder)...'",
+  "onCreateCommand": {
+    "install-global-tools": "dotnet tool install --global Microsoft.OpenApi.Kiota --ignore-failed-sources || true"
+  },
+  "updateContentCommand": {
+    "update-packages": "npm update -g && apt-get update && apt-get upgrade -y"
+  },
+  "postCreateCommand": ["bash", ".devcontainer/post-create.sh"],
+  "postStartCommand": {
+    "info": "echo '🔧 M365 Copilot Development Environment (Builder) Ready! 🛠️'"
+  }
+}
