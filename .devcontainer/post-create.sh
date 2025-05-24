@@ -1,27 +1,27 @@
+#!/bin/bash
+# filepath: /workspace/.devcontainer/post-create.sh
+
+set -e  # Exit on any error
+
 echo "Post-creation setup starting..."
 
-# Install Azure CLI Extensions without prompt
+# Configure Azure CLI (already installed via devcontainer features)
 echo "Configuring Azure CLI..."
 az config set extension.use_dynamic_install=yes_without_prompt
 
-# Install Azure Functions Core Tools v4
-echo "Installing Azure Functions Core Tools..."
-npm install -g azure-functions-core-tools@4 --unsafe-perm true --force
-
-# Install Azurite Storage Emulator
-echo "Installing Azurite Storage Emulator..."
-npm install -g azurite
-
-# Install Microsoft Graph PowerShell Module
-echo "Installing Microsoft Graph PowerShell Module..."
-pwsh -c "Install-Module Microsoft.Graph -Scope CurrentUser -Force"
-
-# Install Teams Toolkit CLI
-echo "Installing Teams Toolkit CLI..."
-npm install -g @microsoft/teamsapp-cli
-
-# Install Kiota
+# Install Kiota (.NET is already available via devcontainer features)
 echo "Installing Kiota..."
 dotnet tool install --global Microsoft.OpenApi.Kiota
 
-echo "Post-creation setup completed!"
+# Verify installations
+echo "Verifying installations..."
+echo "Azure CLI version: $(az --version | head -n1)"
+echo "Azure Functions Core Tools version: $(func --version)"
+echo "Azurite version: $(azurite --version)"
+echo "Teams Toolkit CLI version: $(teamsapp --version)"
+echo "Node.js version: $(node --version)"
+echo "npm version: $(npm --version)"
+echo ".NET version: $(dotnet --version)"
+echo "Kiota version: $(kiota --version)"
+
+echo "Post-creation setup completed successfully!"

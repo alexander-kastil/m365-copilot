@@ -40,7 +40,9 @@
         "teamsdevapp.ms-teams-vscode-extension",
         "ms-copilotstudio.vscode-copilotstudio",
         "teamsdevapp.vscode-ai-foundry",
-        "ms-graph.kiota"
+        "ms-graph.kiota",
+        "mermaidchart.vscode-mermaid-chart",
+        "ms-semantic-kernel.semantic-kernel"
       ],
       "settings": {
         "editor.formatOnSave": true,
@@ -114,6 +116,9 @@
     },
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.11"
+    },
+    "ghcr.io/devcontainers/features/powershell:1": {
+      "version": "latest"
     }
   },
   "forwardPorts": [
