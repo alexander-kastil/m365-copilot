@@ -1,5 +1,5 @@
 {
-  "name": "M365 Copilot Dev (Builder)",
+  "name": "Copilot Agents Dev (Builder)",
   "image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
   "workspaceFolder": "/workspace",
   "customizations": {

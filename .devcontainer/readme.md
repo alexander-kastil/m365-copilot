@@ -1,6 +1,6 @@
-# M365 Copilot Development Environment
+# Copilot Agents Development Environment
 
-This repository provides **two distinct development container configurations** for Microsoft 365 and Copilot development, each optimized for different use cases.
+This repository provides **two distinct development container configurations** for Microsoft 365 Copilot Agents development, each optimized for different use cases.
 
 ## 🎯 Configuration Overview
 

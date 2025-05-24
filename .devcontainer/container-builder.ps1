@@ -11,8 +11,8 @@ param(
 )
 
 # Configuration
-$ImageName = "m365-copilot-dev"
-$DefaultTag = "latest"
+$ImageName = "ms-copilots-agents-dev"
+$DefaultTag = "1.0.0"
 $BuilderTag = "builder"
 $Dockerfile = "Dockerfile.standalone"
 

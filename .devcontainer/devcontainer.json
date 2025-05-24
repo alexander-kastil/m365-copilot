@@ -1,5 +1,5 @@
 {
-  "name": "M365 Copilot Dev (Default)",
+  "name": "Copilot Agents Dev (Default)",
   "build": {
     "dockerfile": "Dockerfile.standalone",
     "context": ".."

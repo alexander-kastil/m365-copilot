@@ -13,8 +13,8 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-IMAGE_NAME="m365-copilot-dev"
-DEFAULT_TAG="latest"
+IMAGE_NAME="ms-copilots-agents-dev"
+DEFAULT_TAG="1.0.0"
 BUILDER_TAG="builder"
 DOCKERFILE="Dockerfile.standalone"
 

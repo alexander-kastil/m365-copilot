@@ -70,7 +70,7 @@ RUN mkdir -p /workspace && chmod -R 777 /workspace
 WORKDIR /workspace
 
 # Copy initialization script
-COPY .devcontainer/init-container.sh /usr/local/bin/init-container.sh
+COPY init-container.sh /usr/local/bin/init-container.sh
 RUN chmod +x /usr/local/bin/init-container.sh
 
 # Expose common development ports
