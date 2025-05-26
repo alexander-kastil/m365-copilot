@@ -38,8 +38,15 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Azure Functions Core Tools (official script, works on most distros)
-RUN curl -sL https://aka.ms/InstallAzureFunctionsCoreTools | bash
+# Install Azure Functions Core Tools (v4, Ubuntu 22.04/Jammy)
+RUN apt-get update \
+    && apt-get install -y apt-transport-https ca-certificates gnupg \
+    && curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null \
+    && echo "deb [arch=amd64] https://packages.microsoft.com/ubuntu/22.04/prod jammy main" > /etc/apt/sources.list.d/azure-functions.list \
+    && apt-get update \
+    && apt-get install -y azure-functions-core-tools-4 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install Azure CLI
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
