@@ -1,22 +1,18 @@
 # Developing Low-Code and Pro-Code Agents and Copilots for Microsoft 365
 
-Master the art of creating intelligent digital assistants for Microsoft 365 in this comprehensive 5-day course. Whether you're a developer or decision-maker, you'll learn to build AI-powered solutions that transform workplace productivity through both low-code and professional development approaches.
+Join our comprehensive course designed for Microsoft 365 and AI developers, as well as decision-makers, to master the art of developing low-code and pro-code agents and copilots for Microsoft 365. This program promises to elevate your development skills, making you proficient in the latest tools and techniques to enhance productivity within the Microsoft 365 ecosystem.
 
-What You'll Learn:
+In this journey, you will first embark on an exploration into the world of Microsoft 365 and its Copilot ecosystem. You will uncover the unique value of connectors versus plugins and delve into the many extensibility options available. As you progress, you will learn to build plugins and connectors for Microsoft Copilot using the Teams Toolkit, gaining insights into architectural extensions and how to integrate enterprise data with Microsoft Graph Connectors, thus adding specialized skills through plugins.
 
-Agents & Copilots Overview, Plugins and Connectors
+Continuing your adventure, you will be introduced to the essence of agents, discovering the key components and the intricacies of the Model Context Protocol (MCP). You will discern the distinctions between autonomous agents and those orchestrated in a multi-agent environment.
+Next, you will get your hands dirty with the practicalities of implementing low-code agents in Copilot Studio. This will involve using prompts, connectors, and conversational actions, as well as integrating data seamlessly and publishing your creations.
 
-Explore the Microsoft 365 Copilot ecosystem, comparing One-Click, Declarative, and Custom Engine agents. Integrate enterprise data with Microsoft Graph Connectors, craft plugins that extend Copilot's capabilities, and implement authentication patterns for secure access to services.
+As your skills mature, you will advance to utilizing the Copilot Studio Visual Studio Code Extension, mastering automation through Agent Flows, the integration of MCPs, Adaptive Cards, and even Multi Agent Orchestration. This phase will also include learning the art of debugging and tuning models for optimal performance.
 
-Low-Code Agents with Copilot Studio
+Your journey will then lead you to the realm of pro-code agents where you will discover the power of the Microsoft 365 Agent Toolkit. Here, you will implement declarative agents, efficiently manage knowledge via connectors, and enhance agent actions with API plugins.
+The adventure continues as you explore the creation of custom engine agents using the Teams AI library. You will learn to enrich these agents with custom data, leverage Azure AI Search, and employ adaptive cards. Additionally, you will implement actions based on Graph and utilize the Model Context Protocol to its fullest.
 
-Design intelligent conversational experiences through intuitive interfaces. Create agents that automate workflows, respond to queries with adaptive experiences, and leverage autonomous behaviors. Learn to use topics, entities, adaptive cards, and analytics to optimize performance.
-
-Pro-Code Agents
-
-Develop sophisticated Custom Engine agents using the Microsoft 365 Agent Toolkit and Teams AI Library. Implement Retrieval-Augmented Generation, Single Sign-On authentication, and deploy your solutions to Azure. Enhance user experiences with Model Context Protocol and Semantic Kernel integration.
-
-Duration: 5 days
+Finally, you will master the critical aspects of monitoring and deploying pro-code agents. You will become adept at app registrations, implementing Single Sign-On (SSO), and deploying Azure resources with Bicep. Ultimately, you will gain the expertise to manage and deploy pro-code agents efficiently, ensuring their seamless integration within the Microsoft 365 landscape.
 
 ## Audience
 
@@ -75,16 +71,16 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 
 ### Advanced Copilot Studio Agents
 
+- Working with the Copilot Studio Visual Studio Code Extension
 - Autonomous Agents & Triggers
 - Automation using Agent Flows
 - Use MCP in Copilot Studio
 - Using Adaptive Cards & Code Interpreter
-- Integrate Azure AI Foundry Services in Copilot Studio
 - Debugging Agents & Using Analytics And Insights
 - Use deep reasoning models for complex tasks
-- Multi Agent Orchestration
 - Copilot Model Tuning
-- Working with the Copilot Studio Visual Studio Code Extension
+- Integrate Azure AI Foundry Services in Copilot Studio
+- Multi Agent Orchestration
 
 ### Implement Pro-Code Agents for Microsoft 365
 
