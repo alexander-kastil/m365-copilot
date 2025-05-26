@@ -1,6 +1,6 @@
 # M365 Copilot Development Container
 # This image provides a complete development environment for Microsoft 365 and Copilot development
-FROM mcr.microsoft.com/devcontainers/dotnet:9.0-jammy
+FROM mcr.microsoft.com/devcontainers/dotnet:9.0
 
 LABEL org.opencontainers.image.title="M365 Copilot Development Container"
 LABEL org.opencontainers.image.description="Complete development environment for Microsoft 365 and Copilot development with .NET 9, Node.js 22, Azure CLI, and Teams development tools"
@@ -38,14 +38,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Azure Functions Core Tools
-RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg \
-    && mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg \
-    && sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/debian/$(lsb_release -rs | cut -d'.' -f 1)/prod $(lsb_release -cs) main" > /etc/apt/sources.list.d/dotnetdev.list' \
-    && apt-get update \
-    && apt-get install -y azure-functions-core-tools-4 \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# Install Azure Functions Core Tools (official script, works on most distros)
+RUN curl -sL https://aka.ms/InstallAzureFunctionsCoreTools | bash
 
 # Install Azure CLI
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
