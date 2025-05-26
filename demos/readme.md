@@ -81,8 +81,8 @@ Microsoft 365 Developer Skills can be acquired through the following resources:
 - Using Adaptive Cards & Code Interpreter
 - Integrate Azure AI Foundry Services in Copilot Studio
 - Debugging Agents & Using Analytics And Insights
-- Multi Agent Orchestration
 - Use deep reasoning models for complex tasks
+- Multi Agent Orchestration
 - Copilot Model Tuning
 - Working with the Copilot Studio Visual Studio Code Extension
 
