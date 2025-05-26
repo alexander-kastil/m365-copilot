@@ -1,6 +1,6 @@
 # M365 Copilot Development Container
 # This image provides a complete development environment for Microsoft 365 and Copilot development
-FROM mcr.microsoft.com/devcontainers/dotnet:9.0
+FROM mcr.microsoft.com/devcontainers/dotnet:9.0-ubuntu-22.04
 
 LABEL org.opencontainers.image.title="M365 Copilot Development Container"
 LABEL org.opencontainers.image.description="Complete development environment for Microsoft 365 and Copilot development with .NET 9, Node.js 22, Azure CLI, and Teams development tools"
